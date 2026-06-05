@@ -52,3 +52,9 @@ python main.py
 - The database and cache files in `database/` are part of the project state.
 - Local environment files such as `.env` are intentionally ignored by Git.
 - Flutter build outputs and Python cache files are excluded through `.gitignore`.
+
+## GitHub Project Sync
+
+This repository is configured with a workflow that can add new issues and pull requests to [Project 1](https://github.com/users/Xyz9934/projects/1).
+
+To enable it, add a repository secret named `PROJECT_PAT` with a GitHub token that has access to Projects. Once that secret is present, new issues and pull requests will be added to the project automatically.

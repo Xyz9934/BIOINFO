@@ -1,0 +1,25 @@
+name: Sync to GitHub Project
+
+on:
+  issues:
+    types:
+      - opened
+      - reopened
+      - closed
+      - labeled
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - closed
+      - labeled
+
+jobs:
+  add-to-project:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add issue or PR to project
+        uses: actions/add-to-project@v1.0.2
+        with:
+          project-url: https://github.com/users/Xyz9934/projects/1
+          github-token: ${{ secrets.PROJECT_PAT }}
