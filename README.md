@@ -47,6 +47,16 @@ pip install -r requirements.txt
 python main.py
 ```
 
+## One-Command Update
+
+Use the helper script to stage, commit, and push your changes from the project root:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\update.ps1 "Your commit message"
+```
+
+If you omit the message, it uses `Update project` by default.
+
 ## Notes
 
 - The database and cache files in `database/` are part of the project state.
