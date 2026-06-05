@@ -8,3 +8,4 @@ venv/
 *.pyo
 *.pyd
 bioinfo.db
+BIOINFO/
