@@ -1,0 +1,50 @@
+#:import dp kivy.metrics.dp
+
+<MetricCard>:
+    orientation: "vertical"
+    padding: dp(14)
+    spacing: dp(8)
+    radius: [18, 18, 18, 18]
+    md_bg_color: 0.07, 0.10, 0.17, 1
+    size_hint_y: None
+    height: dp(118)
+    title: ""
+    value: ""
+    value_color: 1, 1, 1, 1
+    MDLabel:
+        text: root.title
+        theme_text_color: "Custom"
+        text_color: 0.78, 0.82, 0.92, 1
+        font_style: "Body1"
+        adaptive_height: True
+    MDLabel:
+        text: root.value
+        theme_text_color: "Custom"
+        text_color: root.value_color
+        font_style: "H5"
+        bold: True
+        adaptive_height: True
+
+<InfoCard>:
+    orientation: "vertical"
+    padding: dp(14)
+    spacing: dp(10)
+    radius: [18, 18, 18, 18]
+    md_bg_color: 0.07, 0.10, 0.17, 1
+    title: ""
+    body: ""
+    MDLabel:
+        text: root.title
+        theme_text_color: "Custom"
+        text_color: 0.78, 0.82, 0.92, 1
+        bold: True
+        adaptive_height: True
+    ScrollView:
+        do_scroll_x: False
+        bar_width: dp(4)
+        MDLabel:
+            text: root.body
+            theme_text_color: "Custom"
+            text_color: 0.95, 0.97, 1, 1
+            adaptive_height: True
+            text_size: self.width, None

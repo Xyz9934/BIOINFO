@@ -1,0 +1,991 @@
+{
+  "leukemia": {
+    "query": "leukemia",
+    "schema_version": 2,
+    "cached_at": 1778385674,
+    "medgen_ids": [
+      "1885003",
+      "1884957",
+      "1883421",
+      "1882779",
+      "1882746"
+    ],
+    "medgen_links": [
+      "https://www.ncbi.nlm.nih.gov/medgen/1885003",
+      "https://www.ncbi.nlm.nih.gov/medgen/1884957",
+      "https://www.ncbi.nlm.nih.gov/medgen/1883421",
+      "https://www.ncbi.nlm.nih.gov/medgen/1882779",
+      "https://www.ncbi.nlm.nih.gov/medgen/1882746"
+    ],
+    "local_results": [],
+    "genes": [
+      {
+        "gene_id": "7157",
+        "symbol": "TP53",
+        "official_name": "tumor protein p53",
+        "summary": "This gene encodes a tumor suppressor protein containing transcriptional activation, DNA binding, and oligomerization domains. The encoded protein responds to diverse cellular stresses to regulate expression of target genes, thereby inducing cell cycle arrest, apoptosis, senescence, DNA repair, or changes in metabolism. Mutations in this gene are associated with a variety of human cancers, including hereditary cancers such as Li-Fraumeni syndrome. Alternative splicing of this gene and the use of alternate promoters result in multiple transcript variants and isoforms. Additional isoforms have also been shown to result from the use of alternate translation initiation codons from identical transcript variants (PMIDs: 12032546, 20937277). [provided by RefSeq, Dec 2016]",
+        "chromosome": "17",
+        "map_location": "17p13.1",
+        "organism": "Homo sapiens",
+        "source": "NCBI Gene",
+        "ncbi_url": "https://www.ncbi.nlm.nih.gov/gene/7157"
+      },
+      {
+        "gene_id": "1956",
+        "symbol": "EGFR",
+        "official_name": "epidermal growth factor receptor",
+        "summary": "The protein encoded by this gene is a transmembrane glycoprotein that is a member of the protein kinase superfamily. This protein is a receptor for members of the epidermal growth factor family. EGFR is a cell surface protein that binds to epidermal growth factor, thus inducing receptor dimerization and tyrosine autophosphorylation leading to cell proliferation. Mutations in this gene are associated with lung cancer. EGFR is a component of the cytokine storm which contributes to a severe form of Coronavirus Disease 2019 (COVID-19) resulting from infection with severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2). [provided by RefSeq, Jul 2020]",
+        "chromosome": "7",
+        "map_location": "7p11.2",
+        "organism": "Homo sapiens",
+        "source": "NCBI Gene",
+        "ncbi_url": "https://www.ncbi.nlm.nih.gov/gene/1956"
+      },
+      {
+        "gene_id": "348",
+        "symbol": "APOE",
+        "official_name": "apolipoprotein E",
+        "summary": "The protein encoded by this gene is a major apoprotein of the chylomicron. It binds to a specific liver and peripheral cell receptor, and is essential for the normal catabolism of triglyceride-rich lipoprotein constituents. This gene maps to chromosome 19 in a cluster with the related apolipoprotein C1 and C2 genes. Mutations in this gene result in familial dysbetalipoproteinemia, or type III hyperlipoproteinemia (HLP III), in which increased plasma cholesterol and triglycerides are the consequence of impaired clearance of chylomicron and VLDL remnants. [provided by RefSeq, Jun 2016]",
+        "chromosome": "19",
+        "map_location": "19q13.32",
+        "organism": "Homo sapiens",
+        "source": "NCBI Gene",
+        "ncbi_url": "https://www.ncbi.nlm.nih.gov/gene/348"
+      },
+      {
+        "gene_id": "7124",
+        "symbol": "TNF",
+        "official_name": "tumor necrosis factor",
+        "summary": "This gene encodes a multifunctional proinflammatory cytokine that belongs to the tumor necrosis factor (TNF) superfamily. This cytokine is mainly secreted by macrophages. It can bind to, and thus functions through its receptors TNFRSF1A/TNFR1 and TNFRSF1B/TNFBR. This cytokine is involved in the regulation of a wide spectrum of biological processes including cell proliferation, differentiation, apoptosis, lipid metabolism, and coagulation. This cytokine has been implicated in a variety of diseases, including autoimmune diseases, insulin resistance, psoriasis, rheumatoid arthritis ankylosing spondylitis, tuberculosis, autosomal dominant polycystic kidney disease, and cancer. Mutations in this gene affect susceptibility to cerebral malaria, septic shock, and Alzheimer disease. Knockout studies in mice also suggested the neuroprotective function of this cytokine. [provided by RefSeq, Aug 2020]",
+        "chromosome": "6",
+        "map_location": "6p21.33",
+        "organism": "Homo sapiens",
+        "source": "NCBI Gene",
+        "ncbi_url": "https://www.ncbi.nlm.nih.gov/gene/7124"
+      },
+      {
+        "gene_id": "3569",
+        "symbol": "IL6",
+        "official_name": "interleukin 6",
+        "summary": "This gene encodes a cytokine that functions in inflammation and the maturation of B cells. In addition, the encoded protein has been shown to be an endogenous pyrogen capable of inducing fever in people with autoimmune diseases or infections. The protein is primarily produced at sites of acute and chronic inflammation, where it is secreted into the serum and induces a transcriptional inflammatory response through interleukin 6 receptor, alpha. The functioning of this gene is implicated in a wide variety of inflammation-associated disease states, including suspectibility to diabetes mellitus and systemic juvenile rheumatoid arthritis. Elevated levels of the encoded protein have been found in virus infections, including COVID-19 (disease caused by SARS-CoV-2). [provided by RefSeq, Aug 2020]",
+        "chromosome": "7",
+        "map_location": "7p15.3",
+        "organism": "Homo sapiens",
+        "source": "NCBI Gene",
+        "ncbi_url": "https://www.ncbi.nlm.nih.gov/gene/3569"
+      },
+      {
+        "gene_id": "7422",
+        "symbol": "VEGFA",
+        "official_name": "vascular endothelial growth factor A",
+        "summary": "This gene is a member of the PDGF/VEGF growth factor family. It encodes a heparin-binding protein, which exists as a disulfide-linked homodimer. This growth factor induces proliferation and migration of vascular endothelial cells, and is essential for both physiological and pathological angiogenesis. Disruption of this gene in mice resulted in abnormal embryonic blood vessel formation. This gene is upregulated in many known tumors and its expression is correlated with tumor stage and progression. Elevated levels of this protein are found in patients with POEMS syndrome, also known as Crow-Fukase syndrome. Allelic variants of this gene have been associated with microvascular complications of diabetes 1 (MVCD1) and atherosclerosis. Alternatively spliced transcript variants encoding different isoforms have been described. There is also evidence for alternative translation initiation from upstream non-AUG (CUG) codons resulting in additional isoforms. A recent study showed that a C-terminally extended isoform is produced by use of an alternative in-frame translation termination codon via a stop codon readthrough mechanism, and that this isoform is antiangiogenic. Expression of some isoforms derived from the AUG start codon is regulated by a small upstream open reading frame, which is located within an internal ribosome entry site. The levels of VEGF are increased during infection with severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), thus promoting inflammation by facilitating recruitment of inflammatory cells, and by increasing the level of angiopoietin II (Ang II), one of two products of the SARS-CoV-2 binding target, angiotensin-converting enzyme 2 (ACE2). In turn, Ang II facilitates the elevation of VEGF, thus forming a vicious cycle in the release of inflammatory cytokines. [provided by RefSeq, Jun 2020]",
+        "chromosome": "6",
+        "map_location": "6p21.1",
+        "organism": "Homo sapiens",
+        "source": "NCBI Gene",
+        "ncbi_url": "https://www.ncbi.nlm.nih.gov/gene/7422"
+      },
+      {
+        "gene_id": "7040",
+        "symbol": "TGFB1",
+        "official_name": "transforming growth factor beta 1",
+        "summary": "This gene encodes a secreted ligand of the TGF-beta (transforming growth factor-beta) superfamily of proteins. Ligands of this family bind various TGF-beta receptors leading to recruitment and activation of SMAD family transcription factors that regulate gene expression. The encoded preproprotein is proteolytically processed to generate a latency-associated peptide (LAP) and a mature peptide, and is found in either a latent form composed of a mature peptide homodimer, a LAP homodimer, and a latent TGF-beta binding protein, or in an active form consisting solely of the mature peptide homodimer. The mature peptide may also form heterodimers with other TGFB family members. This encoded protein regulates cell proliferation, differentiation and growth, and can modulate expression and activation of other growth factors including interferon gamma and tumor necrosis factor alpha. This gene is frequently upregulated in tumor cells, and mutations in this gene result in Camurati-Engelmann disease. [provided by RefSeq, Aug 2016]",
+        "chromosome": "19",
+        "map_location": "19q13.2",
+        "organism": "Homo sapiens",
+        "source": "NCBI Gene",
+        "ncbi_url": "https://www.ncbi.nlm.nih.gov/gene/7040"
+      },
+      {
+        "gene_id": "4524",
+        "symbol": "MTHFR",
+        "official_name": "methylenetetrahydrofolate reductase",
+        "summary": "The protein encoded by this gene catalyzes the conversion of 5,10-methylenetetrahydrofolate to 5-methyltetrahydrofolate, a co-substrate for homocysteine remethylation to methionine. Genetic variation in this gene influences susceptibility to occlusive vascular disease, neural tube defects, colon cancer and acute leukemia, and mutations in this gene are associated with methylenetetrahydrofolate reductase deficiency.[provided by RefSeq, Oct 2009]",
+        "chromosome": "1",
+        "map_location": "1p36.22",
+        "organism": "Homo sapiens",
+        "source": "NCBI Gene",
+        "ncbi_url": "https://www.ncbi.nlm.nih.gov/gene/4524"
+      }
+    ],
+    "proteins": [
+      {
+        "protein_id": "2960658178",
+        "title": "Chain B, REST corepressor 1",
+        "caption": "9F0A_B",
+        "accession_version": "9F0A_B"
+      },
+      {
+        "protein_id": "2960658177",
+        "title": "Chain A, Lysine-specific histone demethylase 1A",
+        "caption": "9F0A_A",
+        "accession_version": "9F0A_A"
+      },
+      {
+        "protein_id": "331999998",
+        "title": "nuclear autoantigen Sp-100 isoform 6 [Homo sapiens]",
+        "caption": "NP_001193633",
+        "accession_version": "NP_001193633.1"
+      },
+      {
+        "protein_id": "331999996",
+        "title": "nuclear autoantigen Sp-100 isoform 5 [Homo sapiens]",
+        "caption": "NP_001193632",
+        "accession_version": "NP_001193632.1"
+      },
+      {
+        "protein_id": "331999994",
+        "title": "nuclear autoantigen Sp-100 isoform 4 [Homo sapiens]",
+        "caption": "NP_001193631",
+        "accession_version": "NP_001193631.1"
+      }
+    ],
+    "medlineplus": {
+      "title": "Leukemia",
+      "url": "https://medlineplus.gov/leukemia.html?utm_source=mplusconnect&utm_medium=service",
+      "summary_html": "<h3>What is leukemia?</h3>\n<p><a href=\"https://medlineplus.gov/leukemia.html?utm_source=mplusconnect\">Leukemia</a> is a term for cancers of the blood cells. Leukemia starts in blood-forming tissues such as the bone marrow. Your bone marrow makes the cells which will develop into white blood cells, red blood cells, and platelets. Each type of cell has a different job:</p><ul>\n<li>White blood cells help your body fight infection</li>\n<li>Red blood cells deliver oxygen from your lungs to your tissues and organs</li>\n<li><a href=\"https://medlineplus.gov/plateletdisorders.html?utm_source=mplusconnect\">Platelets</a> help form clots to stop bleeding</li>\n</ul>\n\n<p>When you have leukemia, your bone marrow makes large numbers of abnormal cells. This problem most often happens with white blood cells. These abnormal cells build up in your bone marrow and blood. They crowd out the healthy blood cells and make it hard for your cells and blood to do their work.</p>\n\n<h3>What are the types of leukemia?</h3>\n<p>There are different types of leukemia. Which type of leukemia you have depends on the type of blood cell that becomes cancer and whether it grows quickly or slowly.</p>\n\n<p>The type of blood cell could be:</p><ul>\n<li><strong>Lymphocytes,</strong> a type of white blood cell</li>\n<li><strong>Myeloid cells,</strong> immature cells that become white blood cells, red blood cells, or platelets</li>\n</ul>\n\n<p>The different types can grow quickly or slowly:</p><ul>\n<li><strong>Acute leukemia</strong> is fast growing. It usually gets worse quickly if it's not treated.</li>\n<li><strong>Chronic leukemia</strong> is slow growing. It usually gets worse over a longer period of time.</li>\n</ul>\n\n\n<p>The main types of leukemia are:</p><ul>\n<li><strong><a href=\"https://medlineplus.gov/acutelymphocyticleukemia.html?utm_source=mplusconnect\" tid=\"1437\">Acute lymphocytic leukemia (ALL)</a>,</strong> which is the most common type of cancer in children. It can also affect adults.</li>\n<li><strong><a href=\"https://medlineplus.gov/acutemyeloidleukemia.html?utm_source=mplusconnect\" tid=\"5622\">Acute myeloid leukemia (AML)</a>,</strong> which is more common in older adults but can also affect children</li>\n<li><strong><a href=\"https://medlineplus.gov/chroniclymphocyticleukemia.html?utm_source=mplusconnect\" tid=\"87\">Chronic lymphocytic leukemia (CLL)</a>,</strong> which is one of the most common types of leukemia in adults. It often occurs during or after middle age.</li>\n<li><strong><a href=\"https://medlineplus.gov/chronicmyeloidleukemia.html?utm_source=mplusconnect\" tid=\"5624\">Chronic myeloid leukemia (CML)</a>,</strong> which usually occurs in adults during or after middle age</li>\n</ul>\n\n<h3>What causes leukemia?</h3>\n<p>Leukemia happens when there are changes in the genetic material (DNA) in bone marrow cells. The cause of these genetic changes is unknown.</p>\n\n<h3>Who is at risk for leukemia?</h3>\n<p>For the specific types, there are different factors which can raise your risk of getting that type. Overall, your risk of leukemia goes up as you age. It is most common over age 60.</p>\n\n<h3>What are the symptoms of leukemia?</h3>\n<p>Some of the symptoms of leukemia may include:</p><ul>\n<li><a href=\"https://medlineplus.gov/fatigue.html?utm_source=mplusconnect\">Feeling tired</a></li>\n<li><a href=\"https://medlineplus.gov/fever.html?utm_source=mplusconnect\">Fever</a> or night sweats</li>\n<li>Easy <a href=\"https://medlineplus.gov/bruises.html?utm_source=mplusconnect\">bruising</a> or <a href=\"https://medlineplus.gov/bleeding.html?utm_source=mplusconnect\">bleeding</a></li>\n<li>Weight loss or loss of appetite</li>\n<li>Petechiae, which are tiny red dots under the skin. They are caused by bleeding.</li>\n</ul>\n\n<p>Other leukemia symptoms can be different from type to type. Chromic leukemia may not cause symptoms at first.</p>\n\n<h3>How is leukemia diagnosed?</h3>\n<p>Your health care provider may use many tools to diagnose leukemia:</p><ul>\n<li>A physical exam</li>\n<li>A medical history</li>\n<li>Blood tests, such as a <a href=\"https://medlineplus.gov/lab-tests/complete-blood-count-cbc/?utm_source=mplusconnect\">complete blood count (CBC)</a></li>\n<li><a href=\"https://medlineplus.gov/lab-tests/bone-marrow-tests/?utm_source=mplusconnect\">Bone marrow tests</a>. There are two main types - bone marrow aspiration and bone marrow biopsy. Both tests involve removing a sample of bone marrow and bone. The samples are sent to a lab for testing.</li>\n<li><a href=\"https://medlineplus.gov/genetictesting.html?utm_source=mplusconnect\">Genetic tests</a> to look for gene and chromosome changes</li>\n</ul>\n\n<p>Once the provider makes a diagnosis, there may be additional tests to see whether the cancer has spread. These include imaging tests and a lumbar puncture, which is a procedure to collect and test cerebrospinal fluid (CSF).</p>\n\n<h3>What are the treatments for leukemia?</h3>\n<p>The treatments for leukemia depend on which type you have, how severe the leukemia is, your age, your overall health, and other factors. Some possible treatments might include:</p><ul>\n<li><a href=\"https://medlineplus.gov/cancerchemotherapy.html?utm_source=mplusconnect\">Chemotherapy</a></li>\n<li><a href=\"https://medlineplus.gov/radiationtherapy.html?utm_source=mplusconnect\">Radiation therapy</a></li>\n<li>Chemotherapy with <a href=\"https://medlineplus.gov/stemcells.html?utm_source=mplusconnect\">stem cell transplant</a></li>\n<li>Targeted therapy, which uses drugs or other substances that attack specific cancer cells with less harm to normal cells</li>\n</ul>\n\n<p class=\"NLMattribution\">  NIH: National Cancer Institute</p>",
+      "summary": "What is leukemia? Leukemia is a term for cancers of the blood cells. Leukemia starts in blood-forming tissues such as the bone marrow. Your bone marrow makes the cells which will develop into white blood cells, red blood cells, and platelets. Each type of cell has a different job: White blood cells help your body fight infection Red blood cells deliver oxygen from your lungs to your tissues and organs Platelets help form clots to stop bleeding When you have leukemia, your bone marrow makes large numbers of abnormal cells. This problem most often happens with white blood cells. These abnormal cells build up in your bone marrow and blood. They crowd out the healthy blood cells and make it hard for your cells and blood to do their work. What are the types of leukemia? There are different types of leukemia. Which type of leukemia you have depends on the type of blood cell that becomes cancer and whether it grows quickly or slowly. The type of blood cell could be: Lymphocytes, a type of white blood cell Myeloid cells, immature cells that become white blood cells, red blood cells, or platelets The different types can grow quickly or slowly: Acute leukemia is fast growing. It usually gets worse quickly if it's not treated. Chronic leukemia is slow growing. It usually gets worse over a longer period of time. The main types of leukemia are: Acute lymphocytic leukemia (ALL) , which is the most common type of cancer in children. It can also affect adults. Acute myeloid leukemia (AML) , which is more common in older adults but can also affect children Chronic lymphocytic leukemia (CLL) , which is one of the most common types of leukemia in adults. It often occurs during or after middle age. Chronic myeloid leukemia (CML) , which usually occurs in adults during or after middle age What causes leukemia? Leukemia happens when there are changes in the genetic material (DNA) in bone marrow cells. The cause of these genetic changes is unknown. Who is at risk for leukemia? For the specific types, there are different factors which can raise your risk of getting that type. Overall, your risk of leukemia goes up as you age. It is most common over age 60. What are the symptoms of leukemia? Some of the symptoms of leukemia may include: Feeling tired Fever or night sweats Easy bruising or bleeding Weight loss or loss of appetite Petechiae, which are tiny red dots under the skin. They are caused by bleeding. Other leukemia symptoms can be different from type to type. Chromic leukemia may not cause symptoms at first. How is leukemia diagnosed? Your health care provider may use many tools to diagnose leukemia: A physical exam A medical history Blood tests, such as a complete blood count (CBC) Bone marrow tests . There are two main types - bone marrow aspiration and bone marrow biopsy. Both tests involve removing a sample of bone marrow and bone. The samples are sent to a lab for testing. Genetic tests to look for gene and chromosome changes Once the provider makes a diagnosis, there may be additional tests to see whether the cancer has spread. These include imaging tests and a lumbar puncture, which is a procedure to collect and test cerebrospinal fluid (CSF). What are the treatments for leukemia? The treatments for leukemia depend on which type you have, how severe the leukemia is, your age, your overall health, and other factors. Some possible treatments might include: Chemotherapy Radiation therapy Chemotherapy with stem cell transplant Targeted therapy, which uses drugs or other substances that attack specific cancer cells with less harm to normal cells NIH: National Cancer Institute",
+      "source": "MedlinePlus Connect",
+      "code": "C95.90",
+      "code_system": "ICD-10-CM",
+      "related_links": []
+    },
+    "disease_facts": {
+      "is_genetic": false,
+      "code_system": "ICD-10-CM",
+      "code_system_oid": "2.16.840.1.113883.6.90",
+      "code": "C95.90",
+      "symptoms": [
+        "Persistent fatigue and weakness",
+        "Frequent infections or fever",
+        "Easy bruising or bleeding",
+        "Bone or joint pain",
+        "Swollen lymph nodes, liver, or spleen",
+        "Unexplained weight loss and night sweats"
+      ],
+      "precautions": [
+        "Avoid infections with careful hygiene and crowd precautions during low immunity periods",
+        "Follow blood count monitoring and medical review regularly",
+        "Seek urgent care for fever, bleeding, or breathing difficulty",
+        "Maintain adequate nutrition and hydration during therapy"
+      ],
+      "treatment": [
+        "Treatment depends on subtype and may include chemotherapy, targeted therapy, immunotherapy, radiation, or stem cell transplant",
+        "Supportive care often includes transfusion support and infection management",
+        "A hematology specialist should guide final treatment decisions"
+      ]
+    },
+    "clinical_sections": {
+      "symptoms": [
+        "What are the symptoms of leukemia?",
+        "Some of the symptoms of leukemia may include: Feeling tired Fever or night sweats Easy bruising or bleeding Weight loss or loss of appetite Petechiae, which are tiny red dots under the skin.",
+        "Other leukemia symptoms can be different from type to type.",
+        "Chromic leukemia may not cause symptoms at first."
+      ],
+      "precautions": [
+        "Avoid infections with careful hygiene and crowd precautions during low immunity periods",
+        "Follow blood count monitoring and medical review regularly",
+        "Seek urgent care for fever, bleeding, or breathing difficulty",
+        "Maintain adequate nutrition and hydration during therapy"
+      ],
+      "treatment": [
+        "It usually gets worse quickly if it's not treated.",
+        "Your health care provider may use many tools to diagnose leukemia: A physical exam A medical history Blood tests, such as a complete blood count (CBC) Bone marrow tests .",
+        "What are the treatments for leukemia?",
+        "The treatments for leukemia depend on which type you have, how severe the leukemia is, your age, your overall health, and other factors.",
+        "Some possible treatments might include: Chemotherapy Radiation therapy Chemotherapy with stem cell transplant Targeted therapy, which uses drugs or other substances that attack specific cancer cells with less harm to normal cells NIH: National Cancer Institute"
+      ]
+    },
+    "disease_type": false,
+    "related_diseases": [],
+    "summary": "What is leukemia? Leukemia is a term for cancers of the blood cells. Leukemia starts in blood-forming tissues such as the bone marrow. Your bone marrow makes the cells which will develop into white blood cells, red blood cells, and platelets. Each type of cell has a different job: White blood cells help your body fight infection Red blood cells deliver oxygen from your lungs to your tissues and organs Platelets help form clots to stop bleeding When you have leukemia, your bone marrow makes large numbers of abnormal cells. This problem most often happens with white blood cells. These abnormal cells build up in your bone marrow and blood. They crowd out the healthy blood cells and make it hard for your cells and blood to do their work. What are the types of leukemia? There are different types of leukemia. Which type of leukemia you have depends on the type of blood cell that becomes cancer and whether it grows quickly or slowly. The type of blood cell could be: Lymphocytes, a type of white blood cell Myeloid cells, immature cells that become white blood cells, red blood cells, or platelets The different types can grow quickly or slowly: Acute leukemia is fast growing. It usually gets worse quickly if it's not treated. Chronic leukemia is slow growing. It usually gets worse over a longer period of time. The main types of leukemia are: Acute lymphocytic leukemia (ALL) , which is the most common type of cancer in children. It can also affect adults. Acute myeloid leukemia (AML) , which is more common in older adults but can also affect children Chronic lymphocytic leukemia (CLL) , which is one of the most common types of leukemia in adults. It often occurs during or after middle age. Chronic myeloid leukemia (CML) , which usually occurs in adults during or after middle age What causes leukemia? Leukemia happens when there are changes in the genetic material (DNA) in bone marrow cells. The cause of these genetic changes is unknown. Who is at risk for leukemia? For the specific types, there are different factors which can raise your risk of getting that type. Overall, your risk of leukemia goes up as you age. It is most common over age 60. What are the symptoms of leukemia? Some of the symptoms of leukemia may include: Feeling tired Fever or night sweats Easy bruising or bleeding Weight loss or loss of appetite Petechiae, which are tiny red dots under the skin. They are caused by bleeding. Other leukemia symptoms can be different from type to type. Chromic leukemia may not cause symptoms at first. How is leukemia diagnosed? Your health care provider may use many tools to diagnose leukemia: A physical exam A medical history Blood tests, such as a complete blood count (CBC) Bone marrow tests . There are two main types - bone marrow aspiration and bone marrow biopsy. Both tests involve removing a sample of bone marrow and bone. The samples are sent to a lab for testing. Genetic tests to look for gene and chromosome changes Once the provider makes a diagnosis, there may be additional tests to see whether the cancer has spread. These include imaging tests and a lumbar puncture, which is a procedure to collect and test cerebrospinal fluid (CSF). What are the treatments for leukemia? The treatments for leukemia depend on which type you have, how severe the leukemia is, your age, your overall health, and other factors. Some possible treatments might include: Chemotherapy Radiation therapy Chemotherapy with stem cell transplant Targeted therapy, which uses drugs or other substances that attack specific cancer cells with less harm to normal cells NIH: National Cancer Institute",
+    "sources": {
+      "medgen_overview": "https://www.ncbi.nlm.nih.gov/medgen/docs/overview/",
+      "medlineplus_connect": "https://medlineplus.gov/medlineplus-connect/",
+      "medlineplus_connect_technical": "https://medlineplus.gov/medlineplus-connect/technical-information/"
+    }
+  },
+  "sickle cell anemia": {
+    "query": "sickle cell anemia",
+    "medgen_ids": [
+      "825484",
+      "751548",
+      "688239",
+      "634909",
+      "632782"
+    ],
+    "local_results": [
+      {
+        "disease": "Sickle Cell Anemia",
+        "description": "A hereditary blood disorder caused by a mutation affecting hemoglobin structure.",
+        "genes": [
+          "HBB"
+        ],
+        "matched_by": [
+          "disease"
+        ]
+      }
+    ],
+    "genes": [
+      {
+        "gene_id": "348",
+        "symbol": "APOE",
+        "official_name": "apolipoprotein E",
+        "summary": "The protein encoded by this gene is a major apoprotein of the chylomicron. It binds to a specific liver and peripheral cell receptor, and is essential for the normal catabolism of triglyceride-rich lipoprotein constituents. This gene maps to chromosome 19 in a cluster with the related apolipoprotein C1 and C2 genes. Mutations in this gene result in familial dysbetalipoproteinemia, or type III hyperlipoproteinemia (HLP III), in which increased plasma cholesterol and triglycerides are the consequence of impaired clearance of chylomicron and VLDL remnants. [provided by RefSeq, Jun 2016]",
+        "chromosome": "19",
+        "map_location": "19q13.32",
+        "organism": "Homo sapiens",
+        "source": "NCBI Gene",
+        "ncbi_url": "https://www.ncbi.nlm.nih.gov/gene/348"
+      },
+      {
+        "gene_id": "7124",
+        "symbol": "TNF",
+        "official_name": "tumor necrosis factor",
+        "summary": "This gene encodes a multifunctional proinflammatory cytokine that belongs to the tumor necrosis factor (TNF) superfamily. This cytokine is mainly secreted by macrophages. It can bind to, and thus functions through its receptors TNFRSF1A/TNFR1 and TNFRSF1B/TNFBR. This cytokine is involved in the regulation of a wide spectrum of biological processes including cell proliferation, differentiation, apoptosis, lipid metabolism, and coagulation. This cytokine has been implicated in a variety of diseases, including autoimmune diseases, insulin resistance, psoriasis, rheumatoid arthritis ankylosing spondylitis, tuberculosis, autosomal dominant polycystic kidney disease, and cancer. Mutations in this gene affect susceptibility to cerebral malaria, septic shock, and Alzheimer disease. Knockout studies in mice also suggested the neuroprotective function of this cytokine. [provided by RefSeq, Aug 2020]",
+        "chromosome": "6",
+        "map_location": "6p21.33",
+        "organism": "Homo sapiens",
+        "source": "NCBI Gene",
+        "ncbi_url": "https://www.ncbi.nlm.nih.gov/gene/7124"
+      },
+      {
+        "gene_id": "3569",
+        "symbol": "IL6",
+        "official_name": "interleukin 6",
+        "summary": "This gene encodes a cytokine that functions in inflammation and the maturation of B cells. In addition, the encoded protein has been shown to be an endogenous pyrogen capable of inducing fever in people with autoimmune diseases or infections. The protein is primarily produced at sites of acute and chronic inflammation, where it is secreted into the serum and induces a transcriptional inflammatory response through interleukin 6 receptor, alpha. The functioning of this gene is implicated in a wide variety of inflammation-associated disease states, including suspectibility to diabetes mellitus and systemic juvenile rheumatoid arthritis. Elevated levels of the encoded protein have been found in virus infections, including COVID-19 (disease caused by SARS-CoV-2). [provided by RefSeq, Aug 2020]",
+        "chromosome": "7",
+        "map_location": "7p15.3",
+        "organism": "Homo sapiens",
+        "source": "NCBI Gene",
+        "ncbi_url": "https://www.ncbi.nlm.nih.gov/gene/3569"
+      },
+      {
+        "gene_id": "4524",
+        "symbol": "MTHFR",
+        "official_name": "methylenetetrahydrofolate reductase",
+        "summary": "The protein encoded by this gene catalyzes the conversion of 5,10-methylenetetrahydrofolate to 5-methyltetrahydrofolate, a co-substrate for homocysteine remethylation to methionine. Genetic variation in this gene influences susceptibility to occlusive vascular disease, neural tube defects, colon cancer and acute leukemia, and mutations in this gene are associated with methylenetetrahydrofolate reductase deficiency.[provided by RefSeq, Oct 2009]",
+        "chromosome": "1",
+        "map_location": "1p36.22",
+        "organism": "Homo sapiens",
+        "source": "NCBI Gene",
+        "ncbi_url": "https://www.ncbi.nlm.nih.gov/gene/4524"
+      },
+      {
+        "gene_id": "3586",
+        "symbol": "IL10",
+        "official_name": "interleukin 10",
+        "summary": "The protein encoded by this gene is a cytokine produced primarily by monocytes and to a lesser extent by lymphocytes. This cytokine has pleiotropic effects in immunoregulation and inflammation. It down-regulates the expression of Th1 cytokines, MHC class II Ags, and costimulatory molecules on macrophages. It also enhances B cell survival, proliferation, and antibody production. This cytokine can block NF-kappa B activity, and is involved in the regulation of the JAK-STAT signaling pathway. Knockout studies in mice suggested the function of this cytokine as an essential immunoregulator in the intestinal tract. Mutations in this gene are associated with an increased susceptibility to HIV-1 infection and rheumatoid arthritis. [provided by RefSeq, May 2020]",
+        "chromosome": "1",
+        "map_location": "1q32.1",
+        "organism": "Homo sapiens",
+        "source": "NCBI Gene",
+        "ncbi_url": "https://www.ncbi.nlm.nih.gov/gene/3586"
+      },
+      {
+        "gene_id": "1636",
+        "symbol": "ACE",
+        "official_name": "angiotensin I converting enzyme",
+        "summary": "This gene encodes an enzyme involved in blood pressure regulation and electrolyte balance. It catalyzes the conversion of angiotensin I into a physiologically active peptide angiotensin II. Angiotensin II is a potent vasopressor and aldosterone-stimulating peptide that controls blood pressure and fluid-electrolyte balance. This angiotensin converting enzyme (ACE) also inactivates the vasodilator protein, bradykinin. Accordingly, the encoded enzyme increases blood pressure and is a drug target of ACE inhibitors, which are often prescribed to reduce blood pressure. This enzyme additionally plays a role in fertility through its ability to cleave and release GPI-anchored membrane proteins in spermatozoa. Many studies have associated the presence or absence of a 287 bp Alu repeat element in this gene with the levels of circulating enzyme. This polymorphism, as well as mutations in this gene, have been implicated in a wide variety of diseases including cardiovascular pathophysiologies, psoriasis, renal disease, stroke, and Alzheimer's disease. Regulation of the homologous ACE2 gene may be involved in progression of disease caused by several human coronaviruses, including SARS-CoV and SARS-CoV-2. Alternative splicing results in multiple transcript variants encoding both somatic (sACE) and male-specific testicular (tACE) isoforms. [provided by RefSeq, Sep 2020]",
+        "chromosome": "17",
+        "map_location": "17q23.3",
+        "organism": "Homo sapiens",
+        "source": "NCBI Gene",
+        "ncbi_url": "https://www.ncbi.nlm.nih.gov/gene/1636"
+      },
+      {
+        "gene_id": "627",
+        "symbol": "BDNF",
+        "official_name": "brain derived neurotrophic factor",
+        "summary": "This gene encodes a member of the nerve growth factor family of proteins. Alternative splicing results in multiple transcript variants, at least one of which encodes a preproprotein that is proteolytically processed to generate the mature protein. Binding of this protein to its cognate receptor promotes neuronal survival in the adult brain. Expression of this gene is reduced in Alzheimer's, Parkinson's, and Huntington's disease patients. This gene may play a role in the regulation of the stress response and in the biology of mood disorders. [provided by RefSeq, Nov 2015]",
+        "chromosome": "11",
+        "map_location": "11p14.1",
+        "organism": "Homo sapiens",
+        "source": "NCBI Gene",
+        "ncbi_url": "https://www.ncbi.nlm.nih.gov/gene/627"
+      },
+      {
+        "gene_id": "1401",
+        "symbol": "CRP",
+        "official_name": "C-reactive protein",
+        "summary": "The protein encoded by this gene belongs to the pentraxin family which also includes serum amyloid P component protein and pentraxin 3. Pentraxins are involved in complement activation and amplification via communication with complement initiation pattern recognition molecules, but also complement regulation via recruitment of complement regulators. The encoded protein has a calcium dependent ligand binding domain with a distinctive flattened beta-jellyroll structure. It exists in two forms as either a pentamer in circulation or as a nonsoluble monomer in tissues. It is involved in several host defense related functions based on its ability to recognize foreign pathogens and damaged cells of the host and to initiate their elimination by interacting with humoral and cellular effector systems in the blood. Consequently, the level of this protein in plasma increases greatly during acute phase response to tissue injury, infection, or other inflammatory stimuli. Elevated expression of the encoded protein is associated with severe acute respiratory syndrome coronavirus 2 (SARS&#8208;CoV&#8208;2) infection. [provided by RefSeq, Aug 2020]",
+        "chromosome": "1",
+        "map_location": "1q23.2",
+        "organism": "Homo sapiens",
+        "source": "NCBI Gene",
+        "ncbi_url": "https://www.ncbi.nlm.nih.gov/gene/1401"
+      }
+    ],
+    "proteins": [
+      {
+        "protein_id": "34925383",
+        "title": "RecName: Full=Splicing factor 45; AltName: Full=45 kDa-splicing factor; AltName: Full=RNA-binding motif protein 17",
+        "caption": "Q96I25",
+        "accession_version": "Q96I25.1"
+      },
+      {
+        "protein_id": "62122917",
+        "title": "filaggrin-2 [Homo sapiens]",
+        "caption": "NP_001014364",
+        "accession_version": "NP_001014364.1"
+      },
+      {
+        "protein_id": "56749856",
+        "title": "RecName: Full=Hemoglobin subunit beta; AltName: Full=Beta-globin; AltName: Full=Hemoglobin beta chain; Contains: RecName: Full=LVV-hemorphin-7; Contains: RecName: Full=Spinorphin",
+        "caption": "P68871",
+        "accession_version": "P68871.2"
+      },
+      {
+        "protein_id": "1393428226",
+        "title": "HBS1-like protein isoform 4 [Homo sapiens]",
+        "caption": "NP_001350615",
+        "accession_version": "NP_001350615.1"
+      },
+      {
+        "protein_id": "223633995",
+        "title": "HBS1-like protein isoform 3 [Homo sapiens]",
+        "caption": "NP_001138679",
+        "accession_version": "NP_001138679.1"
+      }
+    ],
+    "related_diseases": [
+      "Sickle Cell Anemia"
+    ],
+    "summary": "A hereditary blood disorder caused by a mutation affecting hemoglobin structure."
+  },
+  "lung cancer": {
+    "query": "lung cancer",
+    "medgen_ids": [
+      "1875164",
+      "1821463",
+      "1821462",
+      "1821461",
+      "1821419"
+    ],
+    "local_results": [],
+    "genes": [
+      {
+        "gene_id": "7157",
+        "symbol": "TP53",
+        "official_name": "tumor protein p53",
+        "summary": "This gene encodes a tumor suppressor protein containing transcriptional activation, DNA binding, and oligomerization domains. The encoded protein responds to diverse cellular stresses to regulate expression of target genes, thereby inducing cell cycle arrest, apoptosis, senescence, DNA repair, or changes in metabolism. Mutations in this gene are associated with a variety of human cancers, including hereditary cancers such as Li-Fraumeni syndrome. Alternative splicing of this gene and the use of alternate promoters result in multiple transcript variants and isoforms. Additional isoforms have also been shown to result from the use of alternate translation initiation codons from identical transcript variants (PMIDs: 12032546, 20937277). [provided by RefSeq, Dec 2016]",
+        "chromosome": "17",
+        "map_location": "17p13.1",
+        "organism": "Homo sapiens",
+        "source": "NCBI Gene",
+        "ncbi_url": "https://www.ncbi.nlm.nih.gov/gene/7157"
+      },
+      {
+        "gene_id": "1956",
+        "symbol": "EGFR",
+        "official_name": "epidermal growth factor receptor",
+        "summary": "The protein encoded by this gene is a transmembrane glycoprotein that is a member of the protein kinase superfamily. This protein is a receptor for members of the epidermal growth factor family. EGFR is a cell surface protein that binds to epidermal growth factor, thus inducing receptor dimerization and tyrosine autophosphorylation leading to cell proliferation. Mutations in this gene are associated with lung cancer. EGFR is a component of the cytokine storm which contributes to a severe form of Coronavirus Disease 2019 (COVID-19) resulting from infection with severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2). [provided by RefSeq, Jul 2020]",
+        "chromosome": "7",
+        "map_location": "7p11.2",
+        "organism": "Homo sapiens",
+        "source": "NCBI Gene",
+        "ncbi_url": "https://www.ncbi.nlm.nih.gov/gene/1956"
+      },
+      {
+        "gene_id": "348",
+        "symbol": "APOE",
+        "official_name": "apolipoprotein E",
+        "summary": "The protein encoded by this gene is a major apoprotein of the chylomicron. It binds to a specific liver and peripheral cell receptor, and is essential for the normal catabolism of triglyceride-rich lipoprotein constituents. This gene maps to chromosome 19 in a cluster with the related apolipoprotein C1 and C2 genes. Mutations in this gene result in familial dysbetalipoproteinemia, or type III hyperlipoproteinemia (HLP III), in which increased plasma cholesterol and triglycerides are the consequence of impaired clearance of chylomicron and VLDL remnants. [provided by RefSeq, Jun 2016]",
+        "chromosome": "19",
+        "map_location": "19q13.32",
+        "organism": "Homo sapiens",
+        "source": "NCBI Gene",
+        "ncbi_url": "https://www.ncbi.nlm.nih.gov/gene/348"
+      },
+      {
+        "gene_id": "7124",
+        "symbol": "TNF",
+        "official_name": "tumor necrosis factor",
+        "summary": "This gene encodes a multifunctional proinflammatory cytokine that belongs to the tumor necrosis factor (TNF) superfamily. This cytokine is mainly secreted by macrophages. It can bind to, and thus functions through its receptors TNFRSF1A/TNFR1 and TNFRSF1B/TNFBR. This cytokine is involved in the regulation of a wide spectrum of biological processes including cell proliferation, differentiation, apoptosis, lipid metabolism, and coagulation. This cytokine has been implicated in a variety of diseases, including autoimmune diseases, insulin resistance, psoriasis, rheumatoid arthritis ankylosing spondylitis, tuberculosis, autosomal dominant polycystic kidney disease, and cancer. Mutations in this gene affect susceptibility to cerebral malaria, septic shock, and Alzheimer disease. Knockout studies in mice also suggested the neuroprotective function of this cytokine. [provided by RefSeq, Aug 2020]",
+        "chromosome": "6",
+        "map_location": "6p21.33",
+        "organism": "Homo sapiens",
+        "source": "NCBI Gene",
+        "ncbi_url": "https://www.ncbi.nlm.nih.gov/gene/7124"
+      },
+      {
+        "gene_id": "3569",
+        "symbol": "IL6",
+        "official_name": "interleukin 6",
+        "summary": "This gene encodes a cytokine that functions in inflammation and the maturation of B cells. In addition, the encoded protein has been shown to be an endogenous pyrogen capable of inducing fever in people with autoimmune diseases or infections. The protein is primarily produced at sites of acute and chronic inflammation, where it is secreted into the serum and induces a transcriptional inflammatory response through interleukin 6 receptor, alpha. The functioning of this gene is implicated in a wide variety of inflammation-associated disease states, including suspectibility to diabetes mellitus and systemic juvenile rheumatoid arthritis. Elevated levels of the encoded protein have been found in virus infections, including COVID-19 (disease caused by SARS-CoV-2). [provided by RefSeq, Aug 2020]",
+        "chromosome": "7",
+        "map_location": "7p15.3",
+        "organism": "Homo sapiens",
+        "source": "NCBI Gene",
+        "ncbi_url": "https://www.ncbi.nlm.nih.gov/gene/3569"
+      },
+      {
+        "gene_id": "7422",
+        "symbol": "VEGFA",
+        "official_name": "vascular endothelial growth factor A",
+        "summary": "This gene is a member of the PDGF/VEGF growth factor family. It encodes a heparin-binding protein, which exists as a disulfide-linked homodimer. This growth factor induces proliferation and migration of vascular endothelial cells, and is essential for both physiological and pathological angiogenesis. Disruption of this gene in mice resulted in abnormal embryonic blood vessel formation. This gene is upregulated in many known tumors and its expression is correlated with tumor stage and progression. Elevated levels of this protein are found in patients with POEMS syndrome, also known as Crow-Fukase syndrome. Allelic variants of this gene have been associated with microvascular complications of diabetes 1 (MVCD1) and atherosclerosis. Alternatively spliced transcript variants encoding different isoforms have been described. There is also evidence for alternative translation initiation from upstream non-AUG (CUG) codons resulting in additional isoforms. A recent study showed that a C-terminally extended isoform is produced by use of an alternative in-frame translation termination codon via a stop codon readthrough mechanism, and that this isoform is antiangiogenic. Expression of some isoforms derived from the AUG start codon is regulated by a small upstream open reading frame, which is located within an internal ribosome entry site. The levels of VEGF are increased during infection with severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), thus promoting inflammation by facilitating recruitment of inflammatory cells, and by increasing the level of angiopoietin II (Ang II), one of two products of the SARS-CoV-2 binding target, angiotensin-converting enzyme 2 (ACE2). In turn, Ang II facilitates the elevation of VEGF, thus forming a vicious cycle in the release of inflammatory cytokines. [provided by RefSeq, Jun 2020]",
+        "chromosome": "6",
+        "map_location": "6p21.1",
+        "organism": "Homo sapiens",
+        "source": "NCBI Gene",
+        "ncbi_url": "https://www.ncbi.nlm.nih.gov/gene/7422"
+      },
+      {
+        "gene_id": "7040",
+        "symbol": "TGFB1",
+        "official_name": "transforming growth factor beta 1",
+        "summary": "This gene encodes a secreted ligand of the TGF-beta (transforming growth factor-beta) superfamily of proteins. Ligands of this family bind various TGF-beta receptors leading to recruitment and activation of SMAD family transcription factors that regulate gene expression. The encoded preproprotein is proteolytically processed to generate a latency-associated peptide (LAP) and a mature peptide, and is found in either a latent form composed of a mature peptide homodimer, a LAP homodimer, and a latent TGF-beta binding protein, or in an active form consisting solely of the mature peptide homodimer. The mature peptide may also form heterodimers with other TGFB family members. This encoded protein regulates cell proliferation, differentiation and growth, and can modulate expression and activation of other growth factors including interferon gamma and tumor necrosis factor alpha. This gene is frequently upregulated in tumor cells, and mutations in this gene result in Camurati-Engelmann disease. [provided by RefSeq, Aug 2016]",
+        "chromosome": "19",
+        "map_location": "19q13.2",
+        "organism": "Homo sapiens",
+        "source": "NCBI Gene",
+        "ncbi_url": "https://www.ncbi.nlm.nih.gov/gene/7040"
+      },
+      {
+        "gene_id": "4524",
+        "symbol": "MTHFR",
+        "official_name": "methylenetetrahydrofolate reductase",
+        "summary": "The protein encoded by this gene catalyzes the conversion of 5,10-methylenetetrahydrofolate to 5-methyltetrahydrofolate, a co-substrate for homocysteine remethylation to methionine. Genetic variation in this gene influences susceptibility to occlusive vascular disease, neural tube defects, colon cancer and acute leukemia, and mutations in this gene are associated with methylenetetrahydrofolate reductase deficiency.[provided by RefSeq, Oct 2009]",
+        "chromosome": "1",
+        "map_location": "1p36.22",
+        "organism": "Homo sapiens",
+        "source": "NCBI Gene",
+        "ncbi_url": "https://www.ncbi.nlm.nih.gov/gene/4524"
+      }
+    ],
+    "proteins": [
+      {
+        "protein_id": "19263349",
+        "title": "cbp/p300-interacting transactivator 4 [Homo sapiens]",
+        "caption": "NP_597724",
+        "accession_version": "NP_597724.1"
+      },
+      {
+        "protein_id": "115334682",
+        "title": "SRC kinase signaling inhibitor 1 [Homo sapiens]",
+        "caption": "NP_079524",
+        "accession_version": "NP_079524.2"
+      },
+      {
+        "protein_id": "8392875",
+        "title": "cilia- and flagella-associated protein 20 [Homo sapiens]",
+        "caption": "NP_037374",
+        "accession_version": "NP_037374.1"
+      },
+      {
+        "protein_id": "1621312269",
+        "title": "GTPase KRas isoform a [Homo sapiens]",
+        "caption": "NP_001356715",
+        "accession_version": "NP_001356715.1"
+      },
+      {
+        "protein_id": "1621310587",
+        "title": "GTPase KRas isoform b [Homo sapiens]",
+        "caption": "NP_001356716",
+        "accession_version": "NP_001356716.1"
+      }
+    ],
+    "related_diseases": [],
+    "summary": "This gene encodes a tumor suppressor protein containing transcriptional activation, DNA binding, and oligomerization domains. The encoded protein responds to diverse cellular stresses to regulate expression of target genes, thereby inducing cell cycle arrest, apoptosis, senescence, DNA repair, or changes in metabolism. Mutations in this gene are associated with a variety of human cancers, including hereditary cancers such as Li-Fraumeni syndrome. Alternative splicing of this gene and the use of alternate promoters result in multiple transcript variants and isoforms. Additional isoforms have also been shown to result from the use of alternate translation initiation codons from identical transcript variants (PMIDs: 12032546, 20937277). [provided by RefSeq, Dec 2016]"
+  },
+  "tetenus": {
+    "query": "tetenus",
+    "schema_version": 2,
+    "cached_at": 1778387369,
+    "medgen_ids": [],
+    "medgen_links": [],
+    "local_results": [],
+    "genes": [],
+    "proteins": [],
+    "medlineplus": {},
+    "disease_facts": {
+      "is_genetic": null,
+      "symptoms": [
+        "No detailed local symptom profile is cached yet for 'tetenus'.",
+        "You can still use the disease summary and gene data above."
+      ],
+      "precautions": [
+        "Consult a qualified clinician for diagnosis-specific advice.",
+        "Add this disease to the local JSON cache later for richer offline details."
+      ],
+      "treatment": [
+        "No detailed local treatment/care note is cached yet.",
+        "Use specialist medical guidance for final treatment decisions."
+      ]
+    },
+    "clinical_sections": {
+      "symptoms": [
+        "No detailed local symptom profile is cached yet for 'tetenus'.",
+        "You can still use the disease summary and gene data above."
+      ],
+      "precautions": [
+        "Consult a qualified clinician for diagnosis-specific advice.",
+        "Add this disease to the local JSON cache later for richer offline details."
+      ],
+      "treatment": [
+        "No detailed local treatment/care note is cached yet.",
+        "Use specialist medical guidance for final treatment decisions."
+      ]
+    },
+    "disease_type": null,
+    "related_diseases": [],
+    "summary": "No cached disease summary yet for tetenus.",
+    "sources": {
+      "medgen_overview": "https://www.ncbi.nlm.nih.gov/medgen/docs/overview/",
+      "medlineplus_connect": "https://medlineplus.gov/medlineplus-connect/",
+      "medlineplus_connect_technical": "https://medlineplus.gov/medlineplus-connect/technical-information/"
+    }
+  },
+  "cancer": {
+    "query": "cancer",
+    "schema_version": 2,
+    "cached_at": 1778387454,
+    "medgen_ids": [],
+    "medgen_links": [],
+    "local_results": [
+      {
+        "disease": "Breast Cancer",
+        "description": "A cancer that develops in breast tissue and may be linked to inherited mutations.",
+        "genes": [
+          "BRCA1",
+          "BRCA2",
+          "TP53",
+          "PALB2"
+        ],
+        "matched_by": [
+          "disease",
+          "description"
+        ]
+      }
+    ],
+    "genes": [],
+    "proteins": [],
+    "medlineplus": {},
+    "disease_facts": {
+      "is_genetic": false,
+      "code_system": "ICD-10-CM",
+      "code_system_oid": "2.16.840.1.113883.6.90",
+      "code": "C50.919",
+      "symptoms": [
+        "Breast lump or thickened area",
+        "Change in breast shape or size",
+        "Skin dimpling or redness",
+        "Nipple inversion or discharge",
+        "Pain may occur but is not always present"
+      ],
+      "precautions": [
+        "Do regular self-awareness checks and recommended screening",
+        "Discuss family history and BRCA risk with a clinician",
+        "Limit alcohol, maintain healthy weight, and stay active"
+      ],
+      "treatment": [
+        "Common treatment options include surgery, chemotherapy, radiation, hormone therapy, and targeted therapy",
+        "Management depends on receptor status, tumor stage, and patient condition"
+      ]
+    },
+    "clinical_sections": {
+      "symptoms": [
+        "Breast lump or thickened area",
+        "Change in breast shape or size",
+        "Skin dimpling or redness",
+        "Nipple inversion or discharge",
+        "Pain may occur but is not always present"
+      ],
+      "precautions": [
+        "Do regular self-awareness checks and recommended screening",
+        "Discuss family history and BRCA risk with a clinician",
+        "Limit alcohol, maintain healthy weight, and stay active"
+      ],
+      "treatment": [
+        "Common treatment options include surgery, chemotherapy, radiation, hormone therapy, and targeted therapy",
+        "Management depends on receptor status, tumor stage, and patient condition"
+      ]
+    },
+    "disease_type": false,
+    "related_diseases": [
+      "Breast Cancer"
+    ],
+    "summary": "A cancer that develops in breast tissue and may be linked to inherited mutations.",
+    "sources": {
+      "medgen_overview": "https://www.ncbi.nlm.nih.gov/medgen/docs/overview/",
+      "medlineplus_connect": "https://medlineplus.gov/medlineplus-connect/",
+      "medlineplus_connect_technical": "https://medlineplus.gov/medlineplus-connect/technical-information/"
+    }
+  },
+  "tetanus": {
+    "query": "Tetanus",
+    "schema_version": 2,
+    "cached_at": 1778387516,
+    "medgen_ids": [
+      "1872120",
+      "1872026",
+      "1872019",
+      "1845498",
+      "1836073"
+    ],
+    "medgen_links": [
+      "https://www.ncbi.nlm.nih.gov/medgen/1872120",
+      "https://www.ncbi.nlm.nih.gov/medgen/1872026",
+      "https://www.ncbi.nlm.nih.gov/medgen/1872019",
+      "https://www.ncbi.nlm.nih.gov/medgen/1845498",
+      "https://www.ncbi.nlm.nih.gov/medgen/1836073"
+    ],
+    "local_results": [],
+    "genes": [
+      {
+        "gene_id": "3586",
+        "symbol": "IL10",
+        "official_name": "interleukin 10",
+        "summary": "The protein encoded by this gene is a cytokine produced primarily by monocytes and to a lesser extent by lymphocytes. This cytokine has pleiotropic effects in immunoregulation and inflammation. It down-regulates the expression of Th1 cytokines, MHC class II Ags, and costimulatory molecules on macrophages. It also enhances B cell survival, proliferation, and antibody production. This cytokine can block NF-kappa B activity, and is involved in the regulation of the JAK-STAT signaling pathway. Knockout studies in mice suggested the function of this cytokine as an essential immunoregulator in the intestinal tract. Mutations in this gene are associated with an increased susceptibility to HIV-1 infection and rheumatoid arthritis. [provided by RefSeq, May 2020]",
+        "chromosome": "1",
+        "map_location": "1q32.1",
+        "organism": "Homo sapiens",
+        "source": "NCBI Gene",
+        "ncbi_url": "https://www.ncbi.nlm.nih.gov/gene/3586"
+      },
+      {
+        "gene_id": "3479",
+        "symbol": "IGF1",
+        "official_name": "insulin like growth factor 1",
+        "summary": "The protein encoded by this gene is similar to insulin in function and structure and is a member of a family of proteins involved in mediating growth and development. The encoded protein is processed from a precursor, bound by a specific receptor, and secreted. Defects in this gene are a cause of insulin-like growth factor I deficiency. Alternative splicing results in multiple transcript variants encoding different isoforms that may undergo similar processing to generate mature protein. [provided by RefSeq, Sep 2015]",
+        "chromosome": "12",
+        "map_location": "12q23.2",
+        "organism": "Homo sapiens",
+        "source": "NCBI Gene",
+        "ncbi_url": "https://www.ncbi.nlm.nih.gov/gene/3479"
+      },
+      {
+        "gene_id": "3458",
+        "symbol": "IFNG",
+        "official_name": "interferon gamma",
+        "summary": "This gene encodes a soluble cytokine that is a member of the type II interferon class. The encoded protein is secreted by cells of both the innate and adaptive immune systems. The active protein is a homodimer that binds to the interferon gamma receptor which triggers a cellular response to viral and microbial infections. Mutations in this gene are associated with an increased susceptibility to viral, bacterial and parasitic infections and to several autoimmune diseases. [provided by RefSeq, Dec 2015]",
+        "chromosome": "12",
+        "map_location": "12q15",
+        "organism": "Homo sapiens",
+        "source": "NCBI Gene",
+        "ncbi_url": "https://www.ncbi.nlm.nih.gov/gene/3458"
+      },
+      {
+        "gene_id": "3105",
+        "symbol": "HLA-A",
+        "official_name": "major histocompatibility complex, class I, A",
+        "summary": "HLA-A belongs to the HLA class I heavy chain paralogues. This class I molecule is a heterodimer consisting of a heavy chain and a light chain (beta-2 microglobulin). The heavy chain is anchored in the membrane. Class I molecules play a central role in the immune system by presenting peptides derived from the endoplasmic reticulum lumen so that they can be recognized by cytotoxic T cells. They are expressed in nearly all cells. The heavy chain is approximately 45 kDa and its gene contains 8 exons. Exon 1 encodes the leader peptide, exons 2 and 3 encode the alpha1 and alpha2 domains, which both bind the peptide, exon 4 encodes the alpha3 domain, exon 5 encodes the transmembrane region, and exons 6 and 7 encode the cytoplasmic tail. Polymorphisms within exon 2 and exon 3 are responsible for the peptide binding specificity of each class one molecule. Typing for these polymorphisms is routinely done for bone marrow and kidney transplantation. More than 6000 HLA-A alleles have been described. The HLA system plays an important role in the occurrence and outcome of infectious diseases, including those caused by the malaria parasite, the human immunodeficiency virus (HIV), and the severe acute respiratory syndrome coronavirus (SARS-CoV). The structural spike and the nucleocapsid proteins of the novel coronavirus SARS-CoV-2, which causes coronavirus disease 2019 (COVID-19), are reported to contain multiple Class I epitopes with predicted HLA restrictions. Individual HLA genetic variation may help explain different immune responses to a virus across a population.[provided by RefSeq, Aug 2020]",
+        "chromosome": "6",
+        "map_location": "6p22.1",
+        "organism": "Homo sapiens",
+        "source": "NCBI Gene",
+        "ncbi_url": "https://www.ncbi.nlm.nih.gov/gene/3105"
+      },
+      {
+        "gene_id": "6007",
+        "symbol": "RHD",
+        "official_name": "Rh blood group D antigen",
+        "summary": "The Rh blood group system is the second most clinically significant of the blood groups, second only to ABO. It is also the most polymorphic of the blood groups, with variations due to deletions, gene conversions, and missense mutations. The Rh blood group includes this gene, which encodes the RhD protein, and a second gene that encodes both the RhC and RhE antigens on a single polypeptide. The two genes, and a third unrelated gene, are found in a cluster on chromosome 1. The classification of Rh-positive and Rh-negative individuals is determined by the presence or absence of the highly immunogenic RhD protein on the surface of erythrocytes. Multiple transcript variants encoding different isoforms have been found for this gene. [provided by RefSeq, Jul 2008]",
+        "chromosome": "1",
+        "map_location": "1p36.11",
+        "organism": "Homo sapiens",
+        "source": "NCBI Gene",
+        "ncbi_url": "https://www.ncbi.nlm.nih.gov/gene/6007"
+      },
+      {
+        "gene_id": "6402",
+        "symbol": "SELL",
+        "official_name": "selectin L",
+        "summary": "This gene encodes a cell surface adhesion molecule that belongs to a family of adhesion/homing receptors. The encoded protein contains a C-type lectin-like domain, a calcium-binding epidermal growth factor-like domain, and two short complement-like repeats. The gene product is required for binding and subsequent rolling of leucocytes on endothelial cells, facilitating their migration into secondary lymphoid organs and inflammation sites. Single-nucleotide polymorphisms in this gene have been associated with various diseases including immunoglobulin A nephropathy. Alternatively spliced transcript variants have been found for this gene. [provided by RefSeq, Oct 2009]",
+        "chromosome": "1",
+        "map_location": "1q24.2",
+        "organism": "Homo sapiens",
+        "source": "NCBI Gene",
+        "ncbi_url": "https://www.ncbi.nlm.nih.gov/gene/6402"
+      },
+      {
+        "gene_id": "639",
+        "symbol": "PRDM1",
+        "official_name": "PR/SET domain 1",
+        "summary": "This gene encodes a protein that acts as a repressor of beta-interferon gene expression. The protein binds specifically to the PRDI (positive regulatory domain I element) of the beta-IFN gene promoter. Transcription of this gene increases upon virus induction. Two alternatively spliced transcript variants that encode different isoforms have been reported. [provided by RefSeq, Jul 2008]",
+        "chromosome": "6",
+        "map_location": "6q21",
+        "organism": "Homo sapiens",
+        "source": "NCBI Gene",
+        "ncbi_url": "https://www.ncbi.nlm.nih.gov/gene/639"
+      },
+      {
+        "gene_id": "6845",
+        "symbol": "VAMP7",
+        "official_name": "vesicle associated membrane protein 7",
+        "summary": "This gene encodes a transmembrane protein that is a member of the soluble N-ethylmaleimide-sensitive factor attachment protein receptor (SNARE) family. The encoded protein localizes to late endosomes and lysosomes and is involved in the fusion of transport vesicles to their target membranes. Alternate splicing results in multiple transcript variants.[provided by RefSeq, Jun 2010]",
+        "chromosome": "X, Y",
+        "map_location": "Xq28 and Yq12",
+        "organism": "Homo sapiens",
+        "source": "NCBI Gene",
+        "ncbi_url": "https://www.ncbi.nlm.nih.gov/gene/6845"
+      }
+    ],
+    "proteins": [
+      {
+        "protein_id": "2500440430",
+        "title": "RecName: Full=Immunoglobulin heavy constant gamma 2; AltName: Full=Ig gamma-2 chain C region; AltName: Full=Ig gamma-2 chain C region DOT; AltName: Full=Ig gamma-2 chain C region TIL; AltName: Full=Ig gamma-2 chain C region ZIE",
+        "caption": "P01859",
+        "accession_version": "P01859.3"
+      },
+      {
+        "protein_id": "2500440406",
+        "title": "RecName: Full=Immunoglobulin heavy constant gamma 4; AltName: Full=Ig gamma-4 chain C region",
+        "caption": "P01861",
+        "accession_version": "P01861.2"
+      },
+      {
+        "protein_id": "2500440404",
+        "title": "RecName: Full=Immunoglobulin heavy constant gamma 1; AltName: Full=Ig gamma-1 chain C region; AltName: Full=Ig gamma-1 chain C region EU; AltName: Full=Ig gamma-1 chain C region KOL; AltName: Full=Ig gamma-1 chain C region NIE",
+        "caption": "P01857",
+        "accession_version": "P01857.2"
+      },
+      {
+        "protein_id": "288558837",
+        "title": "RecName: Full=Vesicle-associated membrane protein 2; Short=VAMP-2; AltName: Full=Synaptobrevin-2",
+        "caption": "P63027",
+        "accession_version": "P63027.3"
+      },
+      {
+        "protein_id": "34395491",
+        "title": "RecName: Full=HLA class II histocompatibility antigen, DR beta 3 chain; AltName: Full=MHC class II antigen DRB3; Flags: Precursor",
+        "caption": "P79483",
+        "accession_version": "P79483.1"
+      }
+    ],
+    "medlineplus": {},
+    "disease_facts": {
+      "is_genetic": null,
+      "symptoms": [
+        "No detailed local symptom profile is cached yet for 'Tetanus'.",
+        "You can still use the disease summary and gene data above."
+      ],
+      "precautions": [
+        "Consult a qualified clinician for diagnosis-specific advice.",
+        "Add this disease to the local JSON cache later for richer offline details."
+      ],
+      "treatment": [
+        "No detailed local treatment/care note is cached yet.",
+        "Use specialist medical guidance for final treatment decisions."
+      ]
+    },
+    "clinical_sections": {
+      "symptoms": [
+        "No detailed local symptom profile is cached yet for 'Tetanus'.",
+        "You can still use the disease summary and gene data above."
+      ],
+      "precautions": [
+        "Consult a qualified clinician for diagnosis-specific advice.",
+        "Add this disease to the local JSON cache later for richer offline details."
+      ],
+      "treatment": [
+        "No detailed local treatment/care note is cached yet.",
+        "Use specialist medical guidance for final treatment decisions."
+      ]
+    },
+    "disease_type": null,
+    "related_diseases": [],
+    "summary": "The protein encoded by this gene is a cytokine produced primarily by monocytes and to a lesser extent by lymphocytes. This cytokine has pleiotropic effects in immunoregulation and inflammation. It down-regulates the expression of Th1 cytokines, MHC class II Ags, and costimulatory molecules on macrophages. It also enhances B cell survival, proliferation, and antibody production. This cytokine can block NF-kappa B activity, and is involved in the regulation of the JAK-STAT signaling pathway. Knockout studies in mice suggested the function of this cytokine as an essential immunoregulator in the intestinal tract. Mutations in this gene are associated with an increased susceptibility to HIV-1 infection and rheumatoid arthritis. [provided by RefSeq, May 2020]",
+    "sources": {
+      "medgen_overview": "https://www.ncbi.nlm.nih.gov/medgen/docs/overview/",
+      "medlineplus_connect": "https://medlineplus.gov/medlineplus-connect/",
+      "medlineplus_connect_technical": "https://medlineplus.gov/medlineplus-connect/technical-information/"
+    }
+  },
+  "brca1": {
+    "query": "BRCA1",
+    "schema_version": 2,
+    "cached_at": 1780567536,
+    "medgen_ids": [
+      "1811234",
+      "1802822",
+      "1699139",
+      "1656631",
+      "1631450"
+    ],
+    "medgen_links": [
+      "https://www.ncbi.nlm.nih.gov/medgen/1811234",
+      "https://www.ncbi.nlm.nih.gov/medgen/1802822",
+      "https://www.ncbi.nlm.nih.gov/medgen/1699139",
+      "https://www.ncbi.nlm.nih.gov/medgen/1656631",
+      "https://www.ncbi.nlm.nih.gov/medgen/1631450"
+    ],
+    "local_results": [
+      {
+        "disease": "Breast Cancer",
+        "description": "A cancer that develops in breast tissue and may be linked to inherited mutations.",
+        "genes": [
+          "BRCA1",
+          "BRCA2",
+          "TP53",
+          "PALB2"
+        ],
+        "matched_by": [
+          "gene"
+        ]
+      }
+    ],
+    "genes": [
+      {
+        "gene_id": "672",
+        "symbol": "BRCA1",
+        "official_name": "BRCA1 DNA repair associated",
+        "summary": "This gene encodes a 190 kD nuclear phosphoprotein that plays a role in maintaining genomic stability, and it also acts as a tumor suppressor. The BRCA1 gene contains 22 exons spanning about 110 kb of DNA. The encoded protein combines with other tumor suppressors, DNA damage sensors, and signal transducers to form a large multi-subunit protein complex known as the BRCA1-associated genome surveillance complex (BASC). This gene product associates with RNA polymerase II, and through the C-terminal domain, also interacts with histone deacetylase complexes. This protein thus plays a role in transcription, DNA repair of double-stranded breaks, and recombination. Mutations in this gene are responsible for approximately 40% of inherited breast cancers and more than 80% of inherited breast and ovarian cancers. Alternative splicing plays a role in modulating the subcellular localization and physiological function of this gene. Many alternatively spliced transcript variants, some of which are disease-associated mutations, have been described for this gene, but the full-length natures of only some of these variants has been described. A related pseudogene, which is also located on chromosome 17, has been identified. [provided by RefSeq, May 2020]",
+        "chromosome": "17",
+        "map_location": "17q21.31",
+        "organism": "Homo sapiens",
+        "source": "NCBI Gene",
+        "ncbi_url": "https://www.ncbi.nlm.nih.gov/gene/672"
+      },
+      {
+        "gene_id": "7157",
+        "symbol": "TP53",
+        "official_name": "tumor protein p53",
+        "summary": "This gene encodes a tumor suppressor protein containing transcriptional activation, DNA binding, and oligomerization domains. The encoded protein responds to diverse cellular stresses to regulate expression of target genes, thereby inducing cell cycle arrest, apoptosis, senescence, DNA repair, or changes in metabolism. Mutations in this gene are associated with a variety of human cancers, including hereditary cancers such as Li-Fraumeni syndrome. Alternative splicing of this gene and the use of alternate promoters result in multiple transcript variants and isoforms. Additional isoforms have also been shown to result from the use of alternate translation initiation codons from identical transcript variants (PMIDs: 12032546, 20937277). [provided by RefSeq, Dec 2016]",
+        "chromosome": "17",
+        "map_location": "17p13.1",
+        "organism": "Homo sapiens",
+        "source": "NCBI Gene",
+        "ncbi_url": "https://www.ncbi.nlm.nih.gov/gene/7157"
+      },
+      {
+        "gene_id": "1956",
+        "symbol": "EGFR",
+        "official_name": "epidermal growth factor receptor",
+        "summary": "The protein encoded by this gene is a transmembrane glycoprotein that is a member of the protein kinase superfamily. This protein is a receptor for members of the epidermal growth factor family. EGFR is a cell surface protein that binds to epidermal growth factor, thus inducing receptor dimerization and tyrosine autophosphorylation leading to cell proliferation. Mutations in this gene are associated with lung cancer. EGFR is a component of the cytokine storm which contributes to a severe form of Coronavirus Disease 2019 (COVID-19) resulting from infection with severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2). [provided by RefSeq, Jul 2020]",
+        "chromosome": "7",
+        "map_location": "7p11.2",
+        "organism": "Homo sapiens",
+        "source": "NCBI Gene",
+        "ncbi_url": "https://www.ncbi.nlm.nih.gov/gene/1956"
+      },
+      {
+        "gene_id": "3569",
+        "symbol": "IL6",
+        "official_name": "interleukin 6",
+        "summary": "This gene encodes a cytokine that functions in inflammation and the maturation of B cells. In addition, the encoded protein has been shown to be an endogenous pyrogen capable of inducing fever in people with autoimmune diseases or infections. The protein is primarily produced at sites of acute and chronic inflammation, where it is secreted into the serum and induces a transcriptional inflammatory response through interleukin 6 receptor, alpha. The functioning of this gene is implicated in a wide variety of inflammation-associated disease states, including suspectibility to diabetes mellitus and systemic juvenile rheumatoid arthritis. Elevated levels of the encoded protein have been found in virus infections, including COVID-19 (disease caused by SARS-CoV-2). [provided by RefSeq, Aug 2020]",
+        "chromosome": "7",
+        "map_location": "7p15.3",
+        "organism": "Homo sapiens",
+        "source": "NCBI Gene",
+        "ncbi_url": "https://www.ncbi.nlm.nih.gov/gene/3569"
+      },
+      {
+        "gene_id": "7422",
+        "symbol": "VEGFA",
+        "official_name": "vascular endothelial growth factor A",
+        "summary": "This gene is a member of the PDGF/VEGF growth factor family. It encodes a heparin-binding protein, which exists as a disulfide-linked homodimer. This growth factor induces proliferation and migration of vascular endothelial cells, and is essential for both physiological and pathological angiogenesis. Disruption of this gene in mice resulted in abnormal embryonic blood vessel formation. This gene is upregulated in many known tumors and its expression is correlated with tumor stage and progression. Elevated levels of this protein are found in patients with POEMS syndrome, also known as Crow-Fukase syndrome. Allelic variants of this gene have been associated with microvascular complications of diabetes 1 (MVCD1) and atherosclerosis. Alternatively spliced transcript variants encoding different isoforms have been described. There is also evidence for alternative translation initiation from upstream non-AUG (CUG) codons resulting in additional isoforms. A recent study showed that a C-terminally extended isoform is produced by use of an alternative in-frame translation termination codon via a stop codon readthrough mechanism, and that this isoform is antiangiogenic. Expression of some isoforms derived from the AUG start codon is regulated by a small upstream open reading frame, which is located within an internal ribosome entry site. The levels of VEGF are increased during infection with severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), thus promoting inflammation by facilitating recruitment of inflammatory cells, and by increasing the level of angiopoietin II (Ang II), one of two products of the SARS-CoV-2 binding target, angiotensin-converting enzyme 2 (ACE2). In turn, Ang II facilitates the elevation of VEGF, thus forming a vicious cycle in the release of inflammatory cytokines. [provided by RefSeq, Jun 2020]",
+        "chromosome": "6",
+        "map_location": "6p21.1",
+        "organism": "Homo sapiens",
+        "source": "NCBI Gene",
+        "ncbi_url": "https://www.ncbi.nlm.nih.gov/gene/7422"
+      },
+      {
+        "gene_id": "7040",
+        "symbol": "TGFB1",
+        "official_name": "transforming growth factor beta 1",
+        "summary": "This gene encodes a secreted ligand of the TGF-beta (transforming growth factor-beta) superfamily of proteins. Ligands of this family bind various TGF-beta receptors leading to recruitment and activation of SMAD family transcription factors that regulate gene expression. The encoded preproprotein is proteolytically processed to generate a latency-associated peptide (LAP) and a mature peptide, and is found in either a latent form composed of a mature peptide homodimer, a LAP homodimer, and a latent TGF-beta binding protein, or in an active form consisting solely of the mature peptide homodimer. The mature peptide may also form heterodimers with other TGFB family members. This encoded protein regulates cell proliferation, differentiation and growth, and can modulate expression and activation of other growth factors including interferon gamma and tumor necrosis factor alpha. This gene is frequently upregulated in tumor cells, and mutations in this gene result in Camurati-Engelmann disease. [provided by RefSeq, Aug 2016]",
+        "chromosome": "19",
+        "map_location": "19q13.2",
+        "organism": "Homo sapiens",
+        "source": "NCBI Gene",
+        "ncbi_url": "https://www.ncbi.nlm.nih.gov/gene/7040"
+      },
+      {
+        "gene_id": "4524",
+        "symbol": "MTHFR",
+        "official_name": "methylenetetrahydrofolate reductase",
+        "summary": "The protein encoded by this gene catalyzes the conversion of 5,10-methylenetetrahydrofolate to 5-methyltetrahydrofolate, a co-substrate for homocysteine remethylation to methionine. Genetic variation in this gene influences susceptibility to occlusive vascular disease, neural tube defects, colon cancer and acute leukemia, and mutations in this gene are associated with methylenetetrahydrofolate reductase deficiency.[provided by RefSeq, Oct 2009]",
+        "chromosome": "1",
+        "map_location": "1p36.22",
+        "organism": "Homo sapiens",
+        "source": "NCBI Gene",
+        "ncbi_url": "https://www.ncbi.nlm.nih.gov/gene/4524"
+      },
+      {
+        "gene_id": "3091",
+        "symbol": "HIF1A",
+        "official_name": "hypoxia inducible factor 1 subunit alpha",
+        "summary": "This gene encodes the alpha subunit of transcription factor hypoxia-inducible factor-1 (HIF-1), which is a heterodimer composed of an alpha and a beta subunit. HIF-1 functions as a master regulator of cellular and systemic homeostatic response to hypoxia by activating transcription of many genes, including those involved in energy metabolism, angiogenesis, apoptosis, and other genes whose protein products increase oxygen delivery or facilitate metabolic adaptation to hypoxia. HIF-1 thus plays an essential role in embryonic vascularization, tumor angiogenesis and pathophysiology of ischemic disease. Alternatively spliced transcript variants encoding different isoforms have been identified for this gene. [provided by RefSeq, Jul 2011]",
+        "chromosome": "14",
+        "map_location": "14q23.2",
+        "organism": "Homo sapiens",
+        "source": "NCBI Gene",
+        "ncbi_url": "https://www.ncbi.nlm.nih.gov/gene/3091"
+      }
+    ],
+    "proteins": [
+      {
+        "protein_id": "2778098788",
+        "title": "breast cancer type 2 susceptibility protein isoform 1 [Homo sapiens]",
+        "caption": "NP_001419006",
+        "accession_version": "NP_001419006.1"
+      },
+      {
+        "protein_id": "2240897269",
+        "title": "breast cancer type 2 susceptibility protein isoform 2 [Homo sapiens]",
+        "caption": "NP_001393649",
+        "accession_version": "NP_001393649.1"
+      },
+      {
+        "protein_id": "2240897267",
+        "title": "breast cancer type 2 susceptibility protein isoform 4 [Homo sapiens]",
+        "caption": "NP_001393650",
+        "accession_version": "NP_001393650.1"
+      },
+      {
+        "protein_id": "2240897241",
+        "title": "breast cancer type 2 susceptibility protein isoform 5 [Homo sapiens]",
+        "caption": "NP_001393651",
+        "accession_version": "NP_001393651.1"
+      },
+      {
+        "protein_id": "2240897237",
+        "title": "breast cancer type 2 susceptibility protein isoform 3 [Homo sapiens]",
+        "caption": "NP_001393648",
+        "accession_version": "NP_001393648.1"
+      }
+    ],
+    "medlineplus": {},
+    "disease_facts": {
+      "is_genetic": null,
+      "symptoms": [
+        "No detailed local symptom profile is cached yet for 'BRCA1'.",
+        "You can still use the disease summary and gene data above."
+      ],
+      "precautions": [
+        "Consult a qualified clinician for diagnosis-specific advice.",
+        "Add this disease to the local JSON cache later for richer offline details."
+      ],
+      "treatment": [
+        "No detailed local treatment/care note is cached yet.",
+        "Use specialist medical guidance for final treatment decisions."
+      ]
+    },
+    "clinical_sections": {
+      "symptoms": [
+        "No detailed local symptom profile is cached yet for 'BRCA1'.",
+        "You can still use the disease summary and gene data above."
+      ],
+      "precautions": [
+        "Consult a qualified clinician for diagnosis-specific advice.",
+        "Add this disease to the local JSON cache later for richer offline details."
+      ],
+      "treatment": [
+        "No detailed local treatment/care note is cached yet.",
+        "Use specialist medical guidance for final treatment decisions."
+      ]
+    },
+    "disease_type": null,
+    "related_diseases": [
+      "Breast Cancer"
+    ],
+    "summary": "A cancer that develops in breast tissue and may be linked to inherited mutations.",
+    "sources": {
+      "medgen_overview": "https://www.ncbi.nlm.nih.gov/medgen/docs/overview/",
+      "medlineplus_connect": "https://medlineplus.gov/medlineplus-connect/",
+      "medlineplus_connect_technical": "https://medlineplus.gov/medlineplus-connect/technical-information/"
+    }
+  }
+}
