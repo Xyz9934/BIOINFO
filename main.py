@@ -88,7 +88,9 @@ class BioExplorerApp(MDApp):
         load_local_env()
         init_database()
         self.theme_cls.theme_style = "Dark"
-        self.theme_cls.primary_palette = "DeepPurple"
+        self.theme_cls.primary_palette = "Blue"
+        self.theme_cls.accent_palette = "Teal"
+        self.theme_cls.material_style = "M3"
         Builder.load_file(str(UI_DIR / "widgets.kv"))
         return Builder.load_file(str(UI_DIR / "dashboard.kv"))
 
@@ -98,6 +100,14 @@ class BioExplorerApp(MDApp):
 
     def toggle_drawer(self) -> None:
         self.root.ids.nav_drawer.set_state("toggle")
+
+    def quick_search(self, query: str) -> None:
+        self.root.ids.search_input.text = query
+        self.search_gene_action()
+
+    def toggle_theme(self) -> None:
+        self.theme_cls.theme_style = "Light" if self.theme_cls.theme_style == "Dark" else "Dark"
+        self.root.ids.status_label.text = f"Theme set to {self.theme_cls.theme_style.lower()} mode."
 
     def analyze_sequence_action(self) -> None:
         sequence = self.root.ids.sequence_input.text.strip()
@@ -701,5 +711,3 @@ class BioExplorerApp(MDApp):
 
 if __name__ == "__main__":
     BioExplorerApp().run()
-
-#bullshit09999999#

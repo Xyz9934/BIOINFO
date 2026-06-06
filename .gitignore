@@ -21,3 +21,4 @@ ios/Pods/
 *.db-journal
 bioinfo.db
 BIOINFO/
+.tmp/

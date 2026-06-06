@@ -3,9 +3,9 @@
 <MetricCard>:
     orientation: "vertical"
     padding: dp(14)
-    spacing: dp(8)
-    radius: [18, 18, 18, 18]
-    md_bg_color: 0.07, 0.10, 0.17, 1
+    spacing: dp(6)
+    radius: [24, 24, 24, 24]
+    md_bg_color: 0.11, 0.15, 0.24, 0.92
     size_hint_y: None
     height: dp(118)
     title: ""
@@ -14,14 +14,14 @@
     MDLabel:
         text: root.title
         theme_text_color: "Custom"
-        text_color: 0.78, 0.82, 0.92, 1
+        text_color: 0.72, 0.80, 0.95, 1
         font_style: "Body1"
         adaptive_height: True
     MDLabel:
         text: root.value
         theme_text_color: "Custom"
         text_color: root.value_color
-        font_style: "H5"
+        font_style: "H6"
         bold: True
         adaptive_height: True
 
@@ -29,14 +29,14 @@
     orientation: "vertical"
     padding: dp(14)
     spacing: dp(10)
-    radius: [18, 18, 18, 18]
-    md_bg_color: 0.07, 0.10, 0.17, 1
+    radius: [24, 24, 24, 24]
+    md_bg_color: 0.10, 0.14, 0.22, 0.92
     title: ""
     body: ""
     MDLabel:
         text: root.title
         theme_text_color: "Custom"
-        text_color: 0.78, 0.82, 0.92, 1
+        text_color: 0.72, 0.80, 0.95, 1
         bold: True
         adaptive_height: True
     ScrollView:

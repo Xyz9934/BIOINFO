@@ -5,14 +5,14 @@ MDScreen:
         MDScreenManager:
             MDScreen:
                 MDFloatLayout:
-                    md_bg_color: 0.03, 0.05, 0.10, 1
+                    md_bg_color: 0.04, 0.07, 0.13, 1
 
                     MDTopAppBar:
                         id: top_bar
                         title: "Bioinformatics Explorer"
                         pos_hint: {"top": 1}
                         elevation: 0
-                        md_bg_color: 0.04, 0.06, 0.11, 1
+                        md_bg_color: 0.05, 0.08, 0.15, 0.96
                         left_action_items: [["menu", lambda x: app.toggle_drawer()]]
                         right_action_items: [["history", lambda x: app.show_history_action()], ["content-save", lambda x: app.show_saved_sequences_action()], ["bookmark-multiple", lambda x: app.show_bookmarks_action()]]
 
@@ -32,11 +32,140 @@ MDScreen:
                                 height: self.minimum_height
 
                                 MDCard:
+                                    orientation: "vertical"
+                                    padding: dp(20)
+                                    spacing: dp(16)
+                                    radius: [30, 30, 30, 30]
+                                    md_bg_color: 0.09, 0.12, 0.20, 0.95
+                                    size_hint_y: None
+                                    height: dp(320)
+
+                                    BoxLayout:
+                                        spacing: dp(16)
+
+                                        MDBoxLayout:
+                                            orientation: "vertical"
+                                            spacing: dp(8)
+                                            size_hint_x: 0.62
+
+                                            MDLabel:
+                                                text: "BIOINFO"
+                                                font_style: "H4"
+                                                bold: True
+                                                adaptive_height: True
+                                                text_color: 1, 1, 1, 1
+
+                                            MDLabel:
+                                                text: "AI Bioinformatics Assistant"
+                                                font_style: "H6"
+                                                adaptive_height: True
+                                                text_color: 0.70, 0.80, 0.96, 1
+
+                                            MDLabel:
+                                                text: "Search diseases, genes, literature, and sequences from one premium workspace."
+                                                adaptive_height: True
+                                                text_color: 0.88, 0.92, 0.98, 1
+
+                                            BoxLayout:
+                                                size_hint_y: None
+                                                height: dp(56)
+                                                spacing: dp(10)
+
+                                                MDTextField:
+                                                    hint_text: "Search anything..."
+                                                    mode: "rectangle"
+
+                                                MDRaisedButton:
+                                                    text: "Search"
+                                                    md_bg_color: 0.15, 0.42, 0.95, 1
+                                                    on_release: app.quick_search("BRCA1")
+
+                                        MDCard:
+                                            orientation: "vertical"
+                                            padding: dp(16)
+                                            spacing: dp(10)
+                                            radius: [24, 24, 24, 24]
+                                            md_bg_color: 0.12, 0.16, 0.25, 0.90
+                                            size_hint_x: 0.38
+
+                                            MDLabel:
+                                                text: "Welcome Back"
+                                                bold: True
+                                                adaptive_height: True
+                                                text_color: 1, 1, 1, 1
+
+                                            MDLabel:
+                                                text: "Continue from where you left off or jump straight into the tools."
+                                                adaptive_height: True
+                                                text_color: 0.84, 0.90, 0.98, 1
+
+                                            GridLayout:
+                                                cols: 2
+                                                spacing: dp(10)
+                                                size_hint_y: None
+                                                height: dp(92)
+
+                                                MDCard:
+                                                    radius: [18, 18, 18, 18]
+                                                    md_bg_color: 0.13, 0.18, 0.28, 1
+                                                    padding: dp(12)
+                                                    orientation: "vertical"
+                                                    MDLabel:
+                                                        text: "20K+"
+                                                        bold: True
+                                                        adaptive_height: True
+                                                        text_color: 0.15, 0.42, 0.95, 1
+                                                    MDLabel:
+                                                        text: "Genes"
+                                                        adaptive_height: True
+                                                        text_color: 0.80, 0.86, 0.96, 1
+
+                                                MDCard:
+                                                    radius: [18, 18, 18, 18]
+                                                    md_bg_color: 0.13, 0.18, 0.28, 1
+                                                    padding: dp(12)
+                                                    orientation: "vertical"
+                                                    MDLabel:
+                                                        text: "15K+"
+                                                        bold: True
+                                                        adaptive_height: True
+                                                        text_color: 0.09, 0.72, 0.67, 1
+                                                    MDLabel:
+                                                        text: "Diseases"
+                                                        adaptive_height: True
+                                                        text_color: 0.80, 0.86, 0.96, 1
+
+                                    BoxLayout:
+                                        spacing: dp(10)
+                                        size_hint_y: None
+                                        height: dp(46)
+
+                                        MDRaisedButton:
+                                            text: "Genes"
+                                            md_bg_color: 0.15, 0.42, 0.95, 1
+                                            on_release: app.quick_search("BRCA1")
+
+                                        MDRaisedButton:
+                                            text: "Diseases"
+                                            md_bg_color: 0.09, 0.72, 0.67, 1
+                                            on_release: app.quick_search("Diabetes mellitus")
+
+                                        MDRaisedButton:
+                                            text: "Library"
+                                            md_bg_color: 0.14, 0.75, 0.42, 1
+                                            on_release: app.show_history_action()
+
+                                        MDRaisedButton:
+                                            text: "Theme"
+                                            md_bg_color: 0.35, 0.45, 0.90, 1
+                                            on_release: app.toggle_theme()
+
+                                MDCard:
                                     orientation: "horizontal" if self.width > dp(1100) else "vertical"
                                     padding: dp(16)
                                     spacing: dp(16)
-                                    radius: [22, 22, 22, 22]
-                                    md_bg_color: 0.04, 0.06, 0.11, 1
+                                    radius: [28, 28, 28, 28]
+                                    md_bg_color: 0.08, 0.11, 0.18, 0.95
                                     size_hint_y: None
                                     height: dp(610)
 
@@ -45,7 +174,7 @@ MDScreen:
                                         padding: dp(16)
                                         spacing: dp(14)
                                         radius: [20, 20, 20, 20]
-                                        md_bg_color: 0.06, 0.09, 0.15, 1
+                                        md_bg_color: 0.11, 0.15, 0.24, 0.92
 
                                         MDLabel:
                                             text: "DNA / FASTA Sequence Analysis"
@@ -70,7 +199,7 @@ MDScreen:
 
                                             MDRaisedButton:
                                                 text: "Analyze Sequence"
-                                                md_bg_color: 0.45, 0.25, 0.92, 1
+                                                md_bg_color: 0.15, 0.42, 0.95, 1
                                                 size_hint_x: None
                                                 width: dp(220)
                                                 pos_hint: {"center_x": .5}
@@ -78,7 +207,7 @@ MDScreen:
 
                                             MDRaisedButton:
                                                 text: "Upload FASTA File"
-                                                md_bg_color: 0.20, 0.55, 0.92, 1
+                                                md_bg_color: 0.09, 0.72, 0.67, 1
                                                 size_hint_x: None
                                                 width: dp(220)
                                                 pos_hint: {"center_x": .5}
@@ -86,7 +215,7 @@ MDScreen:
 
                                             MDRaisedButton:
                                                 text: "Run Alignment"
-                                                md_bg_color: 0.18, 0.68, 0.40, 1
+                                                md_bg_color: 0.14, 0.75, 0.42, 1
                                                 size_hint_x: None
                                                 width: dp(220)
                                                 pos_hint: {"center_x": .5}
@@ -96,7 +225,7 @@ MDScreen:
                                             orientation: "vertical"
                                             padding: dp(12)
                                             radius: [16, 16, 16, 16]
-                                            md_bg_color: 0.07, 0.10, 0.17, 1
+                                            md_bg_color: 0.12, 0.16, 0.25, 0.92
                                             size_hint_y: None
                                             height: dp(118)
 
@@ -117,7 +246,8 @@ MDScreen:
                                         MDLabel:
                                             id: sequence_title
                                             text: "Ready to analyze."
-                                            theme_text_color: "Hint"
+                                            theme_text_color: "Custom"
+                                            text_color: 0.70, 0.79, 0.94, 1
                                             adaptive_height: True
 
                                         MDCard:
@@ -125,7 +255,7 @@ MDScreen:
                                             padding: dp(16)
                                             spacing: dp(14)
                                             radius: [20, 20, 20, 20]
-                                            md_bg_color: 0.06, 0.09, 0.15, 1
+                                            md_bg_color: 0.11, 0.15, 0.24, 0.92
                                             size_hint_x: 0.42 if self.parent and self.parent.width > dp(1100) else 1
                                             size_hint_y: None
                                             height: dp(610) if self.parent and self.parent.width > dp(1100) else dp(360)
@@ -135,79 +265,80 @@ MDScreen:
                                                 bold: True
                                                 font_style: "H6"
                                                 adaptive_height: True
+                                                text_color: 0.95, 0.98, 1, 1
 
-                                        GridLayout:
-                                            cols: 3
-                                            spacing: dp(10)
-                                            size_hint_y: None
-                                            height: dp(118)
+                                            GridLayout:
+                                                cols: 3
+                                                spacing: dp(10)
+                                                size_hint_y: None
+                                                height: dp(118)
 
-                                            MetricCard:
-                                                id: length_card
-                                                title: "Sequence Length"
-                                                value: "0 bp"
-                                                value_color: 0.33, 0.70, 1, 1
+                                                MetricCard:
+                                                    id: length_card
+                                                    title: "Sequence Length"
+                                                    value: "0 bp"
+                                                    value_color: 0.23, 0.67, 0.98, 1
 
-                                            MetricCard:
-                                                id: gc_card
-                                                title: "GC Content"
-                                                value: "0.00%"
-                                                value_color: 0.25, 0.89, 0.54, 1
+                                                MetricCard:
+                                                    id: gc_card
+                                                    title: "GC Content"
+                                                    value: "0.00%"
+                                                    value_color: 0.11, 0.76, 0.67, 1
 
-                                            MetricCard:
-                                                id: weight_card
-                                                title: "Molecular Weight"
-                                                value: "0.00"
-                                                value_color: 0.63, 0.44, 1, 1
+                                                MetricCard:
+                                                    id: weight_card
+                                                    title: "Molecular Weight"
+                                                    value: "0.00"
+                                                    value_color: 0.60, 0.66, 1, 1
 
-                                        GridLayout:
-                                            cols: 4 if self.width > dp(700) else 2
-                                            spacing: dp(10)
-                                            size_hint_y: None
-                                            height: dp(236) if self.cols == 2 else dp(118)
+                                            GridLayout:
+                                                cols: 4 if self.width > dp(700) else 2
+                                                spacing: dp(10)
+                                                size_hint_y: None
+                                                height: dp(236) if self.cols == 2 else dp(118)
 
-                                            MetricCard:
-                                                id: a_card
-                                                title: "Adenine (A)"
-                                                value: "0 (0.0%)"
-                                                value_color: 0.33, 0.70, 1, 1
-                                            MetricCard:
-                                                id: t_card
-                                                title: "Thymine (T)"
-                                                value: "0 (0.0%)"
-                                                value_color: 1, 0.82, 0.29, 1
-                                            MetricCard:
-                                                id: g_card
-                                                title: "Guanine (G)"
-                                                value: "0 (0.0%)"
-                                                value_color: 0.25, 0.89, 0.54, 1
-                                            MetricCard:
-                                                id: c_card
-                                                title: "Cytosine (C)"
-                                                value: "0 (0.0%)"
-                                                value_color: 0.50, 0.48, 1, 1
+                                                MetricCard:
+                                                    id: a_card
+                                                    title: "Adenine (A)"
+                                                    value: "0 (0.0%)"
+                                                    value_color: 0.23, 0.67, 0.98, 1
+                                                MetricCard:
+                                                    id: t_card
+                                                    title: "Thymine (T)"
+                                                    value: "0 (0.0%)"
+                                                    value_color: 0.98, 0.76, 0.20, 1
+                                                MetricCard:
+                                                    id: g_card
+                                                    title: "Guanine (G)"
+                                                    value: "0 (0.0%)"
+                                                    value_color: 0.11, 0.76, 0.67, 1
+                                                MetricCard:
+                                                    id: c_card
+                                                    title: "Cytosine (C)"
+                                                    value: "0 (0.0%)"
+                                                    value_color: 0.60, 0.66, 1, 1
 
-                                        BoxLayout:
-                                            spacing: dp(10)
-                                            size_hint_y: None
-                                            height: dp(120)
+                                            BoxLayout:
+                                                spacing: dp(10)
+                                                size_hint_y: None
+                                                height: dp(120)
 
-                                            InfoCard:
-                                                id: reverse_card
-                                                title: "Reverse Complement"
-                                                body: "-"
+                                                InfoCard:
+                                                    id: reverse_card
+                                                    title: "Reverse Complement"
+                                                    body: "-"
 
-                                            InfoCard:
-                                                id: protein_card
-                                                title: "Protein Translation"
-                                                body: "-"
+                                                InfoCard:
+                                                    id: protein_card
+                                                    title: "Protein Translation"
+                                                    body: "-"
 
                                 MDCard:
                                     orientation: "vertical"
                                     padding: dp(16)
                                     spacing: dp(14)
                                     radius: [22, 22, 22, 22]
-                                    md_bg_color: 0.04, 0.06, 0.11, 1
+                                    md_bg_color: 0.08, 0.11, 0.18, 0.95
                                     size_hint_y: None
                                     height: dp(1040)
 
@@ -237,7 +368,7 @@ MDScreen:
 
                                             MDRaisedButton:
                                                 text: "Search"
-                                                md_bg_color: 0.45, 0.25, 0.92, 1
+                                                md_bg_color: 0.15, 0.42, 0.95, 1
                                                 on_release: app.search_gene_action()
 
                                             MDFlatButton:
@@ -246,12 +377,12 @@ MDScreen:
 
                                             MDRaisedButton:
                                                 text: "Save Sequence"
-                                                md_bg_color: 0.20, 0.55, 0.92, 1
+                                                md_bg_color: 0.09, 0.72, 0.67, 1
                                                 on_release: app.save_sequence_action()
 
                                             MDRaisedButton:
                                                 text: "Bookmark Gene"
-                                                md_bg_color: 0.18, 0.68, 0.40, 1
+                                                md_bg_color: 0.14, 0.75, 0.42, 1
                                                 on_release: app.bookmark_gene_action()
 
                                     BoxLayout:
@@ -264,7 +395,7 @@ MDScreen:
                                             padding: dp(16)
                                             spacing: dp(10)
                                             radius: [20, 20, 20, 20]
-                                            md_bg_color: 0.06, 0.09, 0.15, 1
+                                            md_bg_color: 0.11, 0.15, 0.24, 0.92
 
                                             MDLabel:
                                                 id: local_gene_title
@@ -285,7 +416,7 @@ MDScreen:
                                             padding: dp(16)
                                             spacing: dp(10)
                                             radius: [20, 20, 20, 20]
-                                            md_bg_color: 0.06, 0.09, 0.15, 1
+                                            md_bg_color: 0.11, 0.15, 0.24, 0.92
 
                                             MDLabel:
                                                 id: ncbi_gene_title
@@ -310,7 +441,7 @@ MDScreen:
                                             padding: dp(16)
                                             spacing: dp(10)
                                             radius: [20, 20, 20, 20]
-                                            md_bg_color: 0.06, 0.09, 0.15, 1
+                                            md_bg_color: 0.11, 0.15, 0.24, 0.92
                                             size_hint_x: 0.34 if self.parent and self.parent.width > dp(1000) else 1
                                             size_hint_y: None
                                             height: dp(320) if self.parent and self.parent.width > dp(1000) else dp(260)
@@ -531,7 +662,7 @@ MDScreen:
 
                         MDCard:
                             radius: [16, 16, 16, 16]
-                            md_bg_color: 0.08, 0.10, 0.16, 1
+                            md_bg_color: 0.11, 0.15, 0.24, 0.95
                             size_hint_y: None
                             height: dp(40)
                             padding: dp(12), 0
@@ -540,12 +671,12 @@ MDScreen:
                                 id: status_label
                                 text: "Ready"
                                 theme_text_color: "Custom"
-                                text_color: 0.35, 0.88, 0.50, 1
+                                text_color: 0.14, 0.75, 0.42, 1
 
         MDNavigationDrawer:
             id: nav_drawer
             radius: [0, 16, 16, 0]
-            md_bg_color: 0.05, 0.07, 0.12, 1
+            md_bg_color: 0.06, 0.09, 0.16, 0.98
 
             BoxLayout:
                 orientation: "vertical"
