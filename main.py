@@ -83,6 +83,13 @@ class BioExplorerApp(MDApp):
         self.last_alignment: Dict[str, Any] | None = None
         self._active_dialog: MDDialog | None = None
         self._table_rows_by_id: Dict[str, Dict[int, Dict[str, Any]]] = {}
+        self._home_stat_targets: Dict[str, int] = {
+            "home_genes_count": 20000,
+            "home_diseases_count": 15000,
+            "home_drugs_count": 12000,
+            "home_papers_count": 38000000,
+        }
+        self._home_stat_values: Dict[str, int] = {key: 0 for key in self._home_stat_targets}
 
     def build(self) -> Any:
         load_local_env()
@@ -96,18 +103,38 @@ class BioExplorerApp(MDApp):
 
     def on_start(self) -> None:
         self.root.ids.status_label.text = "Ready"
-        self.analyze_sequence_action()
+        Clock.schedule_once(lambda _dt: self._animate_home_stats())
 
     def toggle_drawer(self) -> None:
         self.root.ids.nav_drawer.set_state("toggle")
 
     def quick_search(self, query: str) -> None:
         self.root.ids.search_input.text = query
+        bottom_nav = self.root.ids.get("bottom_nav")
+        if bottom_nav is not None:
+            bottom_nav.current = "search"
         self.search_gene_action()
 
     def toggle_theme(self) -> None:
         self.theme_cls.theme_style = "Light" if self.theme_cls.theme_style == "Dark" else "Dark"
         self.root.ids.status_label.text = f"Theme set to {self.theme_cls.theme_style.lower()} mode."
+
+    def _animate_home_stats(self) -> None:
+        def step(_dt: float) -> bool:
+            done = True
+            for key, target in self._home_stat_targets.items():
+                current = self._home_stat_values[key]
+                if current < target:
+                    done = False
+                    increment = max(1, target // 40)
+                    new_value = min(target, current + increment)
+                    self._home_stat_values[key] = new_value
+                    label = self.root.ids.get(key)
+                    if label is not None:
+                        label.text = f"{new_value:,}+"
+            return not done
+
+        Clock.schedule_interval(step, 0.03)
 
     def analyze_sequence_action(self) -> None:
         sequence = self.root.ids.sequence_input.text.strip()

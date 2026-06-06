@@ -2,8 +2,238 @@
 
 MDScreen:
     MDNavigationLayout:
-        MDScreenManager:
-            MDScreen:
+        MDBottomNavigation:
+            id: bottom_nav
+            panel_color: 0.06, 0.09, 0.16, 0.98
+            text_color_active: 0.15, 0.42, 0.95, 1
+            text_color_normal: 0.70, 0.79, 0.94, 1
+
+            MDBottomNavigationItem:
+                name: "home"
+                text: "Home"
+                icon: "home"
+
+                ScrollView:
+                    do_scroll_x: False
+                    bar_width: dp(6)
+
+                    BoxLayout:
+                        orientation: "vertical"
+                        padding: dp(16)
+                        spacing: dp(14)
+                        size_hint_y: None
+                        height: self.minimum_height
+
+                        MDCard:
+                            orientation: "vertical"
+                            padding: dp(20)
+                            spacing: dp(16)
+                            radius: [30, 30, 30, 30]
+                            md_bg_color: 0.09, 0.12, 0.20, 0.95
+                            size_hint_y: None
+                            height: dp(400)
+
+                            BoxLayout:
+                                spacing: dp(16)
+
+                                MDBoxLayout:
+                                    orientation: "vertical"
+                                    spacing: dp(8)
+                                    size_hint_x: 0.62
+
+                                    MDLabel:
+                                        text: "BIOINFO"
+                                        font_style: "H4"
+                                        bold: True
+                                        adaptive_height: True
+                                        text_color: 1, 1, 1, 1
+
+                                    MDLabel:
+                                        text: "AI Bioinformatics Assistant"
+                                        font_style: "H6"
+                                        adaptive_height: True
+                                        text_color: 0.70, 0.80, 0.96, 1
+
+                                    MDLabel:
+                                        text: "Search diseases, genes, literature, and sequences from one premium workspace."
+                                        adaptive_height: True
+                                        text_color: 0.88, 0.92, 0.98, 1
+
+                                    BoxLayout:
+                                        size_hint_y: None
+                                        height: dp(56)
+                                        spacing: dp(10)
+
+                                        MDTextField:
+                                            hint_text: "Search anything..."
+                                            mode: "rectangle"
+
+                                        MDRaisedButton:
+                                            text: "Search"
+                                            md_bg_color: 0.15, 0.42, 0.95, 1
+                                            on_release: app.quick_search("BRCA1")
+
+                                MDCard:
+                                    orientation: "vertical"
+                                    padding: dp(16)
+                                    spacing: dp(10)
+                                    radius: [24, 24, 24, 24]
+                                    md_bg_color: 0.12, 0.16, 0.25, 0.90
+                                    size_hint_x: 0.38
+
+                                    MDLabel:
+                                        text: "Welcome Back"
+                                        bold: True
+                                        adaptive_height: True
+                                        text_color: 1, 1, 1, 1
+
+                                    MDLabel:
+                                        text: "Continue from where you left off or jump straight into the tools."
+                                        adaptive_height: True
+                                        text_color: 0.84, 0.90, 0.98, 1
+
+                                    GridLayout:
+                                        cols: 2
+                                        spacing: dp(10)
+                                        size_hint_y: None
+                                        height: dp(200)
+
+                                        MDCard:
+                                            radius: [18, 18, 18, 18]
+                                            md_bg_color: 0.13, 0.18, 0.28, 1
+                                            padding: dp(12)
+                                            orientation: "vertical"
+                                            MDLabel:
+                                                id: home_genes_count
+                                                text: "0+"
+                                                bold: True
+                                                adaptive_height: True
+                                                text_color: 0.15, 0.42, 0.95, 1
+                                            MDLabel:
+                                                text: "Genes"
+                                                adaptive_height: True
+                                                text_color: 0.80, 0.86, 0.96, 1
+
+                                        MDCard:
+                                            radius: [18, 18, 18, 18]
+                                            md_bg_color: 0.13, 0.18, 0.28, 1
+                                            padding: dp(12)
+                                            orientation: "vertical"
+                                            MDLabel:
+                                                id: home_diseases_count
+                                                text: "0+"
+                                                bold: True
+                                                adaptive_height: True
+                                                text_color: 0.09, 0.72, 0.67, 1
+                                            MDLabel:
+                                                text: "Diseases"
+                                                adaptive_height: True
+                                                text_color: 0.80, 0.86, 0.96, 1
+
+                                        MDCard:
+                                            radius: [18, 18, 18, 18]
+                                            md_bg_color: 0.13, 0.18, 0.28, 1
+                                            padding: dp(12)
+                                            orientation: "vertical"
+                                            MDLabel:
+                                                id: home_drugs_count
+                                                text: "0+"
+                                                bold: True
+                                                adaptive_height: True
+                                                text_color: 0.14, 0.75, 0.42, 1
+                                            MDLabel:
+                                                text: "Drugs"
+                                                adaptive_height: True
+                                                text_color: 0.80, 0.86, 0.96, 1
+
+                                        MDCard:
+                                            radius: [18, 18, 18, 18]
+                                            md_bg_color: 0.13, 0.18, 0.28, 1
+                                            padding: dp(12)
+                                            orientation: "vertical"
+                                            MDLabel:
+                                                id: home_papers_count
+                                                text: "0+"
+                                                bold: True
+                                                adaptive_height: True
+                                                text_color: 0.60, 0.66, 1, 1
+                                            MDLabel:
+                                                text: "Papers"
+                                                adaptive_height: True
+                                                text_color: 0.80, 0.86, 0.96, 1
+
+                                BoxLayout:
+                                    spacing: dp(10)
+                                    size_hint_y: None
+                                    height: dp(46)
+
+                                    MDRaisedButton:
+                                        text: "Genes"
+                                        md_bg_color: 0.15, 0.42, 0.95, 1
+                                        on_release: app.quick_search("BRCA1")
+
+                                    MDRaisedButton:
+                                        text: "Diseases"
+                                        md_bg_color: 0.09, 0.72, 0.67, 1
+                                        on_release: app.quick_search("Diabetes mellitus")
+
+                                    MDRaisedButton:
+                                        text: "Library"
+                                        md_bg_color: 0.14, 0.75, 0.42, 1
+                                        on_release: app.show_history_action()
+
+                                    MDRaisedButton:
+                                        text: "Theme"
+                                        md_bg_color: 0.35, 0.45, 0.90, 1
+                                        on_release: app.toggle_theme()
+
+                        MDCard:
+                            orientation: "vertical"
+                            padding: dp(18)
+                            spacing: dp(12)
+                            radius: [26, 26, 26, 26]
+                            md_bg_color: 0.11, 0.15, 0.24, 0.92
+                            size_hint_y: None
+                            height: dp(220)
+
+                            MDLabel:
+                                text: "Quick Access"
+                                bold: True
+                                font_style: "H6"
+                                adaptive_height: True
+                                text_color: 0.95, 0.98, 1, 1
+
+                            GridLayout:
+                                cols: 2
+                                spacing: dp(12)
+                                size_hint_y: None
+                                height: dp(144)
+
+                                MDRaisedButton:
+                                    text: "Gene Explorer"
+                                    md_bg_color: 0.15, 0.42, 0.95, 1
+                                    on_release: app.quick_search("BRCA1")
+
+                                MDRaisedButton:
+                                    text: "Disease Explorer"
+                                    md_bg_color: 0.09, 0.72, 0.67, 1
+                                    on_release: app.quick_search("Diabetes mellitus")
+
+                                MDRaisedButton:
+                                    text: "Literature"
+                                    md_bg_color: 0.14, 0.75, 0.42, 1
+                                    on_release: app.show_history_action()
+
+                                MDRaisedButton:
+                                    text: "Bookmarks"
+                                    md_bg_color: 0.35, 0.45, 0.90, 1
+                                    on_release: app.show_bookmarks_action()
+
+            MDBottomNavigationItem:
+                name: "search"
+                text: "Search"
+                icon: "magnify"
+
                 MDFloatLayout:
                     md_bg_color: 0.04, 0.07, 0.13, 1
 
@@ -672,6 +902,118 @@ MDScreen:
                                 text: "Ready"
                                 theme_text_color: "Custom"
                                 text_color: 0.14, 0.75, 0.42, 1
+
+            MDBottomNavigationItem:
+                name: "ai"
+                text: "AI"
+                icon: "robot"
+
+                BoxLayout:
+                    orientation: "vertical"
+                    padding: dp(18)
+                    spacing: dp(14)
+
+                    MDCard:
+                        orientation: "vertical"
+                        padding: dp(24)
+                        spacing: dp(14)
+                        radius: [30, 30, 30, 30]
+                        md_bg_color: 0.11, 0.15, 0.24, 0.92
+
+                        MDLabel:
+                            text: "AI Medical Assistant"
+                            font_style: "H4"
+                            bold: True
+                            adaptive_height: True
+                            text_color: 1, 1, 1, 1
+
+                        MDLabel:
+                            text: "Ask about genes, diseases, pathways, and treatments in a future chat-style experience."
+                            adaptive_height: True
+                            text_color: 0.84, 0.90, 0.98, 1
+
+                        MDCard:
+                            radius: [20, 20, 20, 20]
+                            md_bg_color: 0.13, 0.18, 0.28, 1
+                            padding: dp(16)
+                            orientation: "vertical"
+                            MDLabel:
+                                text: "Coming next: markdown answers, copy button, share button, and typing animation."
+                                adaptive_height: True
+                                text_color: 0.95, 0.97, 1, 1
+
+            MDBottomNavigationItem:
+                name: "library"
+                text: "Library"
+                icon: "library"
+
+                BoxLayout:
+                    orientation: "vertical"
+                    padding: dp(18)
+                    spacing: dp(14)
+
+                    MDCard:
+                        orientation: "vertical"
+                        padding: dp(24)
+                        spacing: dp(14)
+                        radius: [30, 30, 30, 30]
+                        md_bg_color: 0.11, 0.15, 0.24, 0.92
+
+                        MDLabel:
+                            text: "Research Library"
+                            font_style: "H4"
+                            bold: True
+                            adaptive_height: True
+                            text_color: 1, 1, 1, 1
+
+                        MDLabel:
+                            text: "Saved sequences, bookmarked genes, history, and literature will live here."
+                            adaptive_height: True
+                            text_color: 0.84, 0.90, 0.98, 1
+
+                        MDRaisedButton:
+                            text: "Open History"
+                            md_bg_color: 0.15, 0.42, 0.95, 1
+                            on_release: app.show_history_action()
+
+                        MDRaisedButton:
+                            text: "Open Bookmarks"
+                            md_bg_color: 0.09, 0.72, 0.67, 1
+                            on_release: app.show_bookmarks_action()
+
+            MDBottomNavigationItem:
+                name: "settings"
+                text: "Settings"
+                icon: "cog"
+
+                BoxLayout:
+                    orientation: "vertical"
+                    padding: dp(18)
+                    spacing: dp(14)
+
+                    MDCard:
+                        orientation: "vertical"
+                        padding: dp(24)
+                        spacing: dp(14)
+                        radius: [30, 30, 30, 30]
+                        md_bg_color: 0.11, 0.15, 0.24, 0.92
+
+                        MDLabel:
+                            text: "Settings"
+                            font_style: "H4"
+                            bold: True
+                            adaptive_height: True
+                            text_color: 1, 1, 1, 1
+
+                        MDLabel:
+                            text: "Adjust the interface style and keep the app in a premium dark or light mode."
+                            adaptive_height: True
+                            text_color: 0.84, 0.90, 0.98, 1
+
+                        MDRaisedButton:
+                            text: "Toggle Light / Dark"
+                            md_bg_color: 0.35, 0.45, 0.90, 1
+                            on_release: app.toggle_theme()
 
         MDNavigationDrawer:
             id: nav_drawer
