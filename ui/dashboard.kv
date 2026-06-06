@@ -15,250 +15,13 @@ MDScreen:
                         text: "Home"
                         icon: "home"
 
-                ScrollView:
-                    do_scroll_x: False
-                    bar_width: dp(6)
-
-                    BoxLayout:
-                        orientation: "vertical"
-                        padding: dp(16)
-                        spacing: dp(14)
-                        size_hint_y: None
-                        height: self.minimum_height
-
-                        MDCard:
-                            orientation: "vertical"
-                            padding: dp(20)
-                            spacing: dp(16)
-                            radius: [30, 30, 30, 30]
-                            md_bg_color: 0.09, 0.12, 0.20, 0.95
-                            size_hint_y: None
-                            height: dp(400)
-
-                            BoxLayout:
-                                spacing: dp(16)
-
-                                MDBoxLayout:
-                                    orientation: "vertical"
-                                    spacing: dp(8)
-                                    size_hint_x: 0.62
-
-                                    MDLabel:
-                                        text: "BIOINFO"
-                                        font_style: "H4"
-                                        bold: True
-                                        adaptive_height: True
-                                        text_color: 1, 1, 1, 1
-
-                                    MDLabel:
-                                        text: "AI Bioinformatics Assistant"
-                                        font_style: "H6"
-                                        adaptive_height: True
-                                        text_color: 0.70, 0.80, 0.96, 1
-
-                                    MDLabel:
-                                        text: "Search diseases, genes, literature, and sequences from one premium workspace."
-                                        adaptive_height: True
-                                        text_color: 0.88, 0.92, 0.98, 1
-
-                                    BoxLayout:
-                                        size_hint_y: None
-                                        height: dp(56)
-                                        spacing: dp(10)
-
-                                        MDTextField:
-                                            hint_text: "Search anything..."
-                                            mode: "rectangle"
-
-                                        MDRaisedButton:
-                                            text: "Search"
-                                            md_bg_color: 0.15, 0.42, 0.95, 1
-                                            on_release: app.quick_search("BRCA1")
-
-                                MDCard:
-                                    orientation: "vertical"
-                                    padding: dp(16)
-                                    spacing: dp(10)
-                                    radius: [24, 24, 24, 24]
-                                    md_bg_color: 0.12, 0.16, 0.25, 0.90
-                                    size_hint_x: 0.38
-
-                                    MDLabel:
-                                        text: "Welcome Back"
-                                        bold: True
-                                        adaptive_height: True
-                                        text_color: 1, 1, 1, 1
-
-                                    MDLabel:
-                                        text: "Continue from where you left off or jump straight into the tools."
-                                        adaptive_height: True
-                                        text_color: 0.84, 0.90, 0.98, 1
-
-                                    GridLayout:
-                                        cols: 2
-                                        spacing: dp(10)
-                                        size_hint_y: None
-                                        height: dp(200)
-
-                                        MDCard:
-                                            radius: [18, 18, 18, 18]
-                                            md_bg_color: 0.13, 0.18, 0.28, 1
-                                            padding: dp(12)
-                                            orientation: "vertical"
-                                            MDLabel:
-                                                id: home_genes_count
-                                                text: "0+"
-                                                bold: True
-                                                adaptive_height: True
-                                                text_color: 0.15, 0.42, 0.95, 1
-                                            MDLabel:
-                                                text: "Genes"
-                                                adaptive_height: True
-                                                text_color: 0.80, 0.86, 0.96, 1
-
-                                        MDCard:
-                                            radius: [18, 18, 18, 18]
-                                            md_bg_color: 0.13, 0.18, 0.28, 1
-                                            padding: dp(12)
-                                            orientation: "vertical"
-                                            MDLabel:
-                                                id: home_diseases_count
-                                                text: "0+"
-                                                bold: True
-                                                adaptive_height: True
-                                                text_color: 0.09, 0.72, 0.67, 1
-                                            MDLabel:
-                                                text: "Diseases"
-                                                adaptive_height: True
-                                                text_color: 0.80, 0.86, 0.96, 1
-
-                                        MDCard:
-                                            radius: [18, 18, 18, 18]
-                                            md_bg_color: 0.13, 0.18, 0.28, 1
-                                            padding: dp(12)
-                                            orientation: "vertical"
-                                            MDLabel:
-                                                id: home_drugs_count
-                                                text: "0+"
-                                                bold: True
-                                                adaptive_height: True
-                                                text_color: 0.14, 0.75, 0.42, 1
-                                            MDLabel:
-                                                text: "Drugs"
-                                                adaptive_height: True
-                                                text_color: 0.80, 0.86, 0.96, 1
-
-                                        MDCard:
-                                            radius: [18, 18, 18, 18]
-                                            md_bg_color: 0.13, 0.18, 0.28, 1
-                                            padding: dp(12)
-                                            orientation: "vertical"
-                                            MDLabel:
-                                                id: home_papers_count
-                                                text: "0+"
-                                                bold: True
-                                                adaptive_height: True
-                                                text_color: 0.60, 0.66, 1, 1
-                                            MDLabel:
-                                                text: "Papers"
-                                                adaptive_height: True
-                                                text_color: 0.80, 0.86, 0.96, 1
-
-                                BoxLayout:
-                                    spacing: dp(10)
-                                    size_hint_y: None
-                                    height: dp(46)
-
-                                    MDRaisedButton:
-                                        text: "Genes"
-                                        md_bg_color: 0.15, 0.42, 0.95, 1
-                                        on_release: app.quick_search("BRCA1")
-
-                                    MDRaisedButton:
-                                        text: "Diseases"
-                                        md_bg_color: 0.09, 0.72, 0.67, 1
-                                        on_release: app.quick_search("Diabetes mellitus")
-
-                                    MDRaisedButton:
-                                        text: "Library"
-                                        md_bg_color: 0.14, 0.75, 0.42, 1
-                                        on_release: app.show_history_action()
-
-                                    MDRaisedButton:
-                                        text: "Theme"
-                                        md_bg_color: 0.35, 0.45, 0.90, 1
-                                        on_release: app.toggle_theme()
-
-                        MDCard:
-                            orientation: "vertical"
-                            padding: dp(18)
-                            spacing: dp(12)
-                            radius: [26, 26, 26, 26]
-                            md_bg_color: 0.11, 0.15, 0.24, 0.92
-                            size_hint_y: None
-                            height: dp(220)
-
-                            MDLabel:
-                                text: "Quick Access"
-                                bold: True
-                                font_style: "H6"
-                                adaptive_height: True
-                                text_color: 0.95, 0.98, 1, 1
-
-                            GridLayout:
-                                cols: 2
-                                spacing: dp(12)
-                                size_hint_y: None
-                                height: dp(144)
-
-                                MDRaisedButton:
-                                    text: "Gene Explorer"
-                                    md_bg_color: 0.15, 0.42, 0.95, 1
-                                    on_release: app.quick_search("BRCA1")
-
-                                MDRaisedButton:
-                                    text: "Disease Explorer"
-                                    md_bg_color: 0.09, 0.72, 0.67, 1
-                                    on_release: app.quick_search("Diabetes mellitus")
-
-                                MDRaisedButton:
-                                    text: "Literature"
-                                    md_bg_color: 0.14, 0.75, 0.42, 1
-                                    on_release: app.show_history_action()
-
-                                MDRaisedButton:
-                                    text: "Bookmarks"
-                                    md_bg_color: 0.35, 0.45, 0.90, 1
-                                    on_release: app.show_bookmarks_action()
-
-                    MDBottomNavigationItem:
-                        name: "search"
-                        text: "Search"
-                        icon: "magnify"
-
-                MDFloatLayout:
-                    md_bg_color: 0.04, 0.07, 0.13, 1
-
-                    MDTopAppBar:
-                        id: top_bar
-                        title: "Bioinformatics Explorer"
-                        pos_hint: {"top": 1}
-                        elevation: 0
-                        md_bg_color: 0.05, 0.08, 0.15, 0.96
-                        left_action_items: [["menu", lambda x: app.toggle_drawer()]]
-                        right_action_items: [["history", lambda x: app.show_history_action()], ["content-save", lambda x: app.show_saved_sequences_action()], ["bookmark-multiple", lambda x: app.show_bookmarks_action()]]
-
-                    BoxLayout:
-                        orientation: "vertical"
-                        spacing: dp(14)
-                        padding: dp(16), dp(84), dp(16), dp(16)
-
                         ScrollView:
                             do_scroll_x: False
                             bar_width: dp(6)
 
                             BoxLayout:
                                 orientation: "vertical"
+                                padding: dp(16)
                                 spacing: dp(14)
                                 size_hint_y: None
                                 height: self.minimum_height
@@ -270,7 +33,7 @@ MDScreen:
                                     radius: [30, 30, 30, 30]
                                     md_bg_color: 0.09, 0.12, 0.20, 0.95
                                     size_hint_y: None
-                                    height: dp(320)
+                                    height: dp(400)
 
                                     BoxLayout:
                                         spacing: dp(16)
@@ -335,7 +98,7 @@ MDScreen:
                                                 cols: 2
                                                 spacing: dp(10)
                                                 size_hint_y: None
-                                                height: dp(92)
+                                                height: dp(200)
 
                                                 MDCard:
                                                     radius: [18, 18, 18, 18]
@@ -343,7 +106,8 @@ MDScreen:
                                                     padding: dp(12)
                                                     orientation: "vertical"
                                                     MDLabel:
-                                                        text: "20K+"
+                                                        id: home_genes_count
+                                                        text: "0+"
                                                         bold: True
                                                         adaptive_height: True
                                                         text_color: 0.15, 0.42, 0.95, 1
@@ -358,7 +122,8 @@ MDScreen:
                                                     padding: dp(12)
                                                     orientation: "vertical"
                                                     MDLabel:
-                                                        text: "15K+"
+                                                        id: home_diseases_count
+                                                        text: "0+"
                                                         bold: True
                                                         adaptive_height: True
                                                         text_color: 0.09, 0.72, 0.67, 1
@@ -367,655 +132,890 @@ MDScreen:
                                                         adaptive_height: True
                                                         text_color: 0.80, 0.86, 0.96, 1
 
-                                    BoxLayout:
-                                        spacing: dp(10)
+                                                MDCard:
+                                                    radius: [18, 18, 18, 18]
+                                                    md_bg_color: 0.13, 0.18, 0.28, 1
+                                                    padding: dp(12)
+                                                    orientation: "vertical"
+                                                    MDLabel:
+                                                        id: home_drugs_count
+                                                        text: "0+"
+                                                        bold: True
+                                                        adaptive_height: True
+                                                        text_color: 0.14, 0.75, 0.42, 1
+                                                    MDLabel:
+                                                        text: "Drugs"
+                                                        adaptive_height: True
+                                                        text_color: 0.80, 0.86, 0.96, 1
+
+                                                MDCard:
+                                                    radius: [18, 18, 18, 18]
+                                                    md_bg_color: 0.13, 0.18, 0.28, 1
+                                                    padding: dp(12)
+                                                    orientation: "vertical"
+                                                    MDLabel:
+                                                        id: home_papers_count
+                                                        text: "0+"
+                                                        bold: True
+                                                        adaptive_height: True
+                                                        text_color: 0.60, 0.66, 1, 1
+                                                    MDLabel:
+                                                        text: "Papers"
+                                                        adaptive_height: True
+                                                        text_color: 0.80, 0.86, 0.96, 1
+
+                                        BoxLayout:
+                                            spacing: dp(10)
+                                            size_hint_y: None
+                                            height: dp(46)
+
+                                            MDRaisedButton:
+                                                text: "Genes"
+                                                md_bg_color: 0.15, 0.42, 0.95, 1
+                                                on_release: app.quick_search("BRCA1")
+
+                                            MDRaisedButton:
+                                                text: "Diseases"
+                                                md_bg_color: 0.09, 0.72, 0.67, 1
+                                                on_release: app.quick_search("Diabetes mellitus")
+
+                                            MDRaisedButton:
+                                                text: "Library"
+                                                md_bg_color: 0.14, 0.75, 0.42, 1
+                                                on_release: app.show_history_action()
+
+                                            MDRaisedButton:
+                                                text: "Theme"
+                                                md_bg_color: 0.35, 0.45, 0.90, 1
+                                                on_release: app.toggle_theme()
+
+                                MDCard:
+                                    orientation: "vertical"
+                                    padding: dp(18)
+                                    spacing: dp(12)
+                                    radius: [26, 26, 26, 26]
+                                    md_bg_color: 0.11, 0.15, 0.24, 0.92
+                                    size_hint_y: None
+                                    height: dp(220)
+
+                                    MDLabel:
+                                        text: "Quick Access"
+                                        bold: True
+                                        font_style: "H6"
+                                        adaptive_height: True
+                                        text_color: 0.95, 0.98, 1, 1
+
+                                    GridLayout:
+                                        cols: 2
+                                        spacing: dp(12)
                                         size_hint_y: None
-                                        height: dp(46)
+                                        height: dp(144)
 
                                         MDRaisedButton:
-                                            text: "Genes"
+                                            text: "Gene Explorer"
                                             md_bg_color: 0.15, 0.42, 0.95, 1
                                             on_release: app.quick_search("BRCA1")
 
                                         MDRaisedButton:
-                                            text: "Diseases"
+                                            text: "Disease Explorer"
                                             md_bg_color: 0.09, 0.72, 0.67, 1
                                             on_release: app.quick_search("Diabetes mellitus")
 
                                         MDRaisedButton:
-                                            text: "Library"
+                                            text: "Literature"
                                             md_bg_color: 0.14, 0.75, 0.42, 1
                                             on_release: app.show_history_action()
 
                                         MDRaisedButton:
-                                            text: "Theme"
+                                            text: "Bookmarks"
                                             md_bg_color: 0.35, 0.45, 0.90, 1
-                                            on_release: app.toggle_theme()
+                                            on_release: app.show_bookmarks_action()
 
-                                MDCard:
-                                    orientation: "horizontal" if self.width > dp(1100) else "vertical"
-                                    padding: dp(16)
-                                    spacing: dp(16)
-                                    radius: [28, 28, 28, 28]
-                                    md_bg_color: 0.08, 0.11, 0.18, 0.95
-                                    size_hint_y: None
-                                    height: dp(610)
+                    MDBottomNavigationItem:
+                        name: "search"
+                        text: "Search"
+                        icon: "magnify"
 
-                                    MDCard:
+                        MDFloatLayout:
+                            md_bg_color: 0.04, 0.07, 0.13, 1
+
+                            MDTopAppBar:
+                                id: top_bar
+                                title: "Bioinformatics Explorer"
+                                pos_hint: {"top": 1}
+                                elevation: 0
+                                md_bg_color: 0.05, 0.08, 0.15, 0.96
+                                left_action_items: [["menu", lambda x: app.toggle_drawer()]]
+                                right_action_items: [["history", lambda x: app.show_history_action()], ["content-save", lambda x: app.show_saved_sequences_action()], ["bookmark-multiple", lambda x: app.show_bookmarks_action()]]
+
+                            BoxLayout:
+                                orientation: "vertical"
+                                spacing: dp(14)
+                                padding: dp(16), dp(84), dp(16), dp(16)
+
+                                ScrollView:
+                                    do_scroll_x: False
+                                    bar_width: dp(6)
+
+                                    BoxLayout:
                                         orientation: "vertical"
-                                        padding: dp(16)
                                         spacing: dp(14)
-                                        radius: [20, 20, 20, 20]
-                                        md_bg_color: 0.11, 0.15, 0.24, 0.92
-
-                                        MDLabel:
-                                            text: "DNA / FASTA Sequence Analysis"
-                                            bold: True
-                                            font_style: "H6"
-                                            adaptive_height: True
-
-                                        MDTextField:
-                                            id: sequence_input
-                                            multiline: True
-                                            text: ">sample_1\nATGGCCATTGTAATGGGCCGCTGAAAGGGTGCCCGATAG"
-                                            mode: "rectangle"
-                                            hint_text: "Paste DNA / FASTA Sequence"
-                                            size_hint_y: None
-                                            height: dp(150)
-
-                                        BoxLayout:
-                                            orientation: "vertical"
-                                            spacing: dp(10)
-                                            size_hint_y: None
-                                            height: dp(162)
-
-                                            MDRaisedButton:
-                                                text: "Analyze Sequence"
-                                                md_bg_color: 0.15, 0.42, 0.95, 1
-                                                size_hint_x: None
-                                                width: dp(220)
-                                                pos_hint: {"center_x": .5}
-                                                on_release: app.analyze_sequence_action()
-
-                                            MDRaisedButton:
-                                                text: "Upload FASTA File"
-                                                md_bg_color: 0.09, 0.72, 0.67, 1
-                                                size_hint_x: None
-                                                width: dp(220)
-                                                pos_hint: {"center_x": .5}
-                                                on_release: app.upload_fasta_action()
-
-                                            MDRaisedButton:
-                                                text: "Run Alignment"
-                                                md_bg_color: 0.14, 0.75, 0.42, 1
-                                                size_hint_x: None
-                                                width: dp(220)
-                                                pos_hint: {"center_x": .5}
-                                                on_release: app.run_alignment_action()
+                                        size_hint_y: None
+                                        height: self.minimum_height
 
                                         MDCard:
                                             orientation: "vertical"
-                                            padding: dp(12)
-                                            radius: [16, 16, 16, 16]
-                                            md_bg_color: 0.12, 0.16, 0.25, 0.92
+                                            padding: dp(20)
+                                            spacing: dp(16)
+                                            radius: [30, 30, 30, 30]
+                                            md_bg_color: 0.09, 0.12, 0.20, 0.95
                                             size_hint_y: None
-                                            height: dp(118)
+                                            height: dp(320)
 
-                                            MDLabel:
-                                                text: "Sequence Visualization"
-                                                bold: True
-                                                adaptive_height: True
+                                            BoxLayout:
+                                                spacing: dp(16)
 
-                                            ScrollView:
-                                                do_scroll_x: False
+                                                MDBoxLayout:
+                                                    orientation: "vertical"
+                                                    spacing: dp(8)
+                                                    size_hint_x: 0.62
+
+                                                    MDLabel:
+                                                        text: "BIOINFO"
+                                                        font_style: "H4"
+                                                        bold: True
+                                                        adaptive_height: True
+                                                        text_color: 1, 1, 1, 1
+
+                                                    MDLabel:
+                                                        text: "AI Bioinformatics Assistant"
+                                                        font_style: "H6"
+                                                        adaptive_height: True
+                                                        text_color: 0.70, 0.80, 0.96, 1
+
+                                                    MDLabel:
+                                                        text: "Search diseases, genes, literature, and sequences from one premium workspace."
+                                                        adaptive_height: True
+                                                        text_color: 0.88, 0.92, 0.98, 1
+
+                                                    BoxLayout:
+                                                        size_hint_y: None
+                                                        height: dp(56)
+                                                        spacing: dp(10)
+
+                                                        MDTextField:
+                                                            hint_text: "Search anything..."
+                                                            mode: "rectangle"
+
+                                                        MDRaisedButton:
+                                                            text: "Search"
+                                                            md_bg_color: 0.15, 0.42, 0.95, 1
+                                                            on_release: app.quick_search("BRCA1")
+
+                                                MDCard:
+                                                    orientation: "vertical"
+                                                    padding: dp(16)
+                                                    spacing: dp(10)
+                                                    radius: [24, 24, 24, 24]
+                                                    md_bg_color: 0.12, 0.16, 0.25, 0.90
+                                                    size_hint_x: 0.38
+
+                                                    MDLabel:
+                                                        text: "Welcome Back"
+                                                        bold: True
+                                                        adaptive_height: True
+                                                        text_color: 1, 1, 1, 1
+
+                                                    MDLabel:
+                                                        text: "Continue from where you left off or jump straight into the tools."
+                                                        adaptive_height: True
+                                                        text_color: 0.84, 0.90, 0.98, 1
+
+                                                    GridLayout:
+                                                        cols: 2
+                                                        spacing: dp(10)
+                                                        size_hint_y: None
+                                                        height: dp(92)
+
+                                                        MDCard:
+                                                            radius: [18, 18, 18, 18]
+                                                            md_bg_color: 0.13, 0.18, 0.28, 1
+                                                            padding: dp(12)
+                                                            orientation: "vertical"
+                                                            MDLabel:
+                                                                text: "20K+"
+                                                                bold: True
+                                                                adaptive_height: True
+                                                                text_color: 0.15, 0.42, 0.95, 1
+                                                            MDLabel:
+                                                                text: "Genes"
+                                                                adaptive_height: True
+                                                                text_color: 0.80, 0.86, 0.96, 1
+
+                                                        MDCard:
+                                                            radius: [18, 18, 18, 18]
+                                                            md_bg_color: 0.13, 0.18, 0.28, 1
+                                                            padding: dp(12)
+                                                            orientation: "vertical"
+                                                            MDLabel:
+                                                                text: "15K+"
+                                                                bold: True
+                                                                adaptive_height: True
+                                                                text_color: 0.09, 0.72, 0.67, 1
+                                                            MDLabel:
+                                                                text: "Diseases"
+                                                                adaptive_height: True
+                                                                text_color: 0.80, 0.86, 0.96, 1
+
+                                            BoxLayout:
+                                                spacing: dp(10)
+                                                size_hint_y: None
+                                                height: dp(46)
+
+                                                MDRaisedButton:
+                                                    text: "Genes"
+                                                    md_bg_color: 0.15, 0.42, 0.95, 1
+                                                    on_release: app.quick_search("BRCA1")
+
+                                                MDRaisedButton:
+                                                    text: "Diseases"
+                                                    md_bg_color: 0.09, 0.72, 0.67, 1
+                                                    on_release: app.quick_search("Diabetes mellitus")
+
+                                                MDRaisedButton:
+                                                    text: "Library"
+                                                    md_bg_color: 0.14, 0.75, 0.42, 1
+                                                    on_release: app.show_history_action()
+
+                                                MDRaisedButton:
+                                                    text: "Theme"
+                                                    md_bg_color: 0.35, 0.45, 0.90, 1
+                                                    on_release: app.toggle_theme()
+
+                                        MDCard:
+                                            orientation: "horizontal" if self.width > dp(1100) else "vertical"
+                                            padding: dp(16)
+                                            spacing: dp(16)
+                                            radius: [28, 28, 28, 28]
+                                            md_bg_color: 0.08, 0.11, 0.18, 0.95
+                                            size_hint_y: None
+                                            height: dp(610)
+
+                                            MDCard:
+                                                orientation: "vertical"
+                                                padding: dp(16)
+                                                spacing: dp(14)
+                                                radius: [20, 20, 20, 20]
+                                                md_bg_color: 0.11, 0.15, 0.24, 0.92
+
                                                 MDLabel:
-                                                    id: sequence_visualization
-                                                    text: "No sequence loaded."
-                                                    markup: True
+                                                    text: "DNA / FASTA Sequence Analysis"
+                                                    bold: True
+                                                    font_style: "H6"
                                                     adaptive_height: True
-                                                    text_size: self.width, None
 
-                                        MDLabel:
-                                            id: sequence_title
-                                            text: "Ready to analyze."
-                                            theme_text_color: "Custom"
-                                            text_color: 0.70, 0.79, 0.94, 1
-                                            adaptive_height: True
+                                                MDTextField:
+                                                    id: sequence_input
+                                                    multiline: True
+                                                    text: ">sample_1\nATGGCCATTGTAATGGGCCGCTGAAAGGGTGCCCGATAG"
+                                                    mode: "rectangle"
+                                                    hint_text: "Paste DNA / FASTA Sequence"
+                                                    size_hint_y: None
+                                                    height: dp(150)
+
+                                                BoxLayout:
+                                                    orientation: "vertical"
+                                                    spacing: dp(10)
+                                                    size_hint_y: None
+                                                    height: dp(162)
+
+                                                    MDRaisedButton:
+                                                        text: "Analyze Sequence"
+                                                        md_bg_color: 0.15, 0.42, 0.95, 1
+                                                        size_hint_x: None
+                                                        width: dp(220)
+                                                        pos_hint: {"center_x": .5}
+                                                        on_release: app.analyze_sequence_action()
+
+                                                    MDRaisedButton:
+                                                        text: "Upload FASTA File"
+                                                        md_bg_color: 0.09, 0.72, 0.67, 1
+                                                        size_hint_x: None
+                                                        width: dp(220)
+                                                        pos_hint: {"center_x": .5}
+                                                        on_release: app.upload_fasta_action()
+
+                                                    MDRaisedButton:
+                                                        text: "Run Alignment"
+                                                        md_bg_color: 0.14, 0.75, 0.42, 1
+                                                        size_hint_x: None
+                                                        width: dp(220)
+                                                        pos_hint: {"center_x": .5}
+                                                        on_release: app.run_alignment_action()
+
+                                                MDCard:
+                                                    orientation: "vertical"
+                                                    padding: dp(12)
+                                                    radius: [16, 16, 16, 16]
+                                                    md_bg_color: 0.12, 0.16, 0.25, 0.92
+                                                    size_hint_y: None
+                                                    height: dp(118)
+
+                                                    MDLabel:
+                                                        text: "Sequence Visualization"
+                                                        bold: True
+                                                        adaptive_height: True
+
+                                                    ScrollView:
+                                                        do_scroll_x: False
+                                                        MDLabel:
+                                                            id: sequence_visualization
+                                                            text: "No sequence loaded."
+                                                            markup: True
+                                                            adaptive_height: True
+                                                            text_size: self.width, None
+
+                                                MDLabel:
+                                                    id: sequence_title
+                                                    text: "Ready to analyze."
+                                                    theme_text_color: "Custom"
+                                                    text_color: 0.70, 0.79, 0.94, 1
+                                                    adaptive_height: True
+
+                                                MDCard:
+                                                    orientation: "vertical"
+                                                    padding: dp(16)
+                                                    spacing: dp(14)
+                                                    radius: [20, 20, 20, 20]
+                                                    md_bg_color: 0.11, 0.15, 0.24, 0.92
+                                                    size_hint_x: 0.42 if self.parent and self.parent.width > dp(1100) else 1
+                                                    size_hint_y: None
+                                                    height: dp(610) if self.parent and self.parent.width > dp(1100) else dp(360)
+
+                                                    MDLabel:
+                                                        text: "Analysis Results"
+                                                        bold: True
+                                                        font_style: "H6"
+                                                        adaptive_height: True
+                                                        text_color: 0.95, 0.98, 1, 1
+
+                                                    GridLayout:
+                                                        cols: 3
+                                                        spacing: dp(10)
+                                                        size_hint_y: None
+                                                        height: dp(118)
+
+                                                        MetricCard:
+                                                            id: length_card
+                                                            title: "Sequence Length"
+                                                            value: "0 bp"
+                                                            value_color: 0.23, 0.67, 0.98, 1
+
+                                                        MetricCard:
+                                                            id: gc_card
+                                                            title: "GC Content"
+                                                            value: "0.00%"
+                                                            value_color: 0.11, 0.76, 0.67, 1
+
+                                                        MetricCard:
+                                                            id: weight_card
+                                                            title: "Molecular Weight"
+                                                            value: "0.00"
+                                                            value_color: 0.60, 0.66, 1, 1
+
+                                                    GridLayout:
+                                                        cols: 4 if self.width > dp(700) else 2
+                                                        spacing: dp(10)
+                                                        size_hint_y: None
+                                                        height: dp(236) if self.cols == 2 else dp(118)
+
+                                                        MetricCard:
+                                                            id: a_card
+                                                            title: "Adenine (A)"
+                                                            value: "0 (0.0%)"
+                                                            value_color: 0.23, 0.67, 0.98, 1
+                                                        MetricCard:
+                                                            id: t_card
+                                                            title: "Thymine (T)"
+                                                            value: "0 (0.0%)"
+                                                            value_color: 0.98, 0.76, 0.20, 1
+                                                        MetricCard:
+                                                            id: g_card
+                                                            title: "Guanine (G)"
+                                                            value: "0 (0.0%)"
+                                                            value_color: 0.11, 0.76, 0.67, 1
+                                                        MetricCard:
+                                                            id: c_card
+                                                            title: "Cytosine (C)"
+                                                            value: "0 (0.0%)"
+                                                            value_color: 0.60, 0.66, 1, 1
+
+                                                    BoxLayout:
+                                                        spacing: dp(10)
+                                                        size_hint_y: None
+                                                        height: dp(120)
+
+                                                        InfoCard:
+                                                            id: reverse_card
+                                                            title: "Reverse Complement"
+                                                            body: "-"
+
+                                                        InfoCard:
+                                                            id: protein_card
+                                                            title: "Protein Translation"
+                                                            body: "-"
 
                                         MDCard:
                                             orientation: "vertical"
                                             padding: dp(16)
                                             spacing: dp(14)
-                                            radius: [20, 20, 20, 20]
-                                            md_bg_color: 0.11, 0.15, 0.24, 0.92
-                                            size_hint_x: 0.42 if self.parent and self.parent.width > dp(1100) else 1
+                                            radius: [22, 22, 22, 22]
+                                            md_bg_color: 0.08, 0.11, 0.18, 0.95
                                             size_hint_y: None
-                                            height: dp(610) if self.parent and self.parent.width > dp(1100) else dp(360)
+                                            height: dp(1040)
 
                                             MDLabel:
-                                                text: "Analysis Results"
+                                                text: "Disease / Gene Search"
                                                 bold: True
                                                 font_style: "H6"
                                                 adaptive_height: True
-                                                text_color: 0.95, 0.98, 1, 1
-
-                                            GridLayout:
-                                                cols: 3
-                                                spacing: dp(10)
-                                                size_hint_y: None
-                                                height: dp(118)
-
-                                                MetricCard:
-                                                    id: length_card
-                                                    title: "Sequence Length"
-                                                    value: "0 bp"
-                                                    value_color: 0.23, 0.67, 0.98, 1
-
-                                                MetricCard:
-                                                    id: gc_card
-                                                    title: "GC Content"
-                                                    value: "0.00%"
-                                                    value_color: 0.11, 0.76, 0.67, 1
-
-                                                MetricCard:
-                                                    id: weight_card
-                                                    title: "Molecular Weight"
-                                                    value: "0.00"
-                                                    value_color: 0.60, 0.66, 1, 1
-
-                                            GridLayout:
-                                                cols: 4 if self.width > dp(700) else 2
-                                                spacing: dp(10)
-                                                size_hint_y: None
-                                                height: dp(236) if self.cols == 2 else dp(118)
-
-                                                MetricCard:
-                                                    id: a_card
-                                                    title: "Adenine (A)"
-                                                    value: "0 (0.0%)"
-                                                    value_color: 0.23, 0.67, 0.98, 1
-                                                MetricCard:
-                                                    id: t_card
-                                                    title: "Thymine (T)"
-                                                    value: "0 (0.0%)"
-                                                    value_color: 0.98, 0.76, 0.20, 1
-                                                MetricCard:
-                                                    id: g_card
-                                                    title: "Guanine (G)"
-                                                    value: "0 (0.0%)"
-                                                    value_color: 0.11, 0.76, 0.67, 1
-                                                MetricCard:
-                                                    id: c_card
-                                                    title: "Cytosine (C)"
-                                                    value: "0 (0.0%)"
-                                                    value_color: 0.60, 0.66, 1, 1
 
                                             BoxLayout:
+                                                orientation: "vertical"
                                                 spacing: dp(10)
                                                 size_hint_y: None
-                                                height: dp(120)
+                                                height: dp(220)
 
-                                                InfoCard:
-                                                    id: reverse_card
-                                                    title: "Reverse Complement"
-                                                    body: "-"
-
-                                                InfoCard:
-                                                    id: protein_card
-                                                    title: "Protein Translation"
-                                                    body: "-"
-
-                                MDCard:
-                                    orientation: "vertical"
-                                    padding: dp(16)
-                                    spacing: dp(14)
-                                    radius: [22, 22, 22, 22]
-                                    md_bg_color: 0.08, 0.11, 0.18, 0.95
-                                    size_hint_y: None
-                                    height: dp(1040)
-
-                                    MDLabel:
-                                        text: "Disease / Gene Search"
-                                        bold: True
-                                        font_style: "H6"
-                                        adaptive_height: True
-
-                                    BoxLayout:
-                                        orientation: "vertical"
-                                        spacing: dp(10)
-                                        size_hint_y: None
-                                        height: dp(220)
-
-                                        MDTextField:
-                                            id: search_input
-                                            hint_text: "Search disease or gene"
-                                            text: "BRCA1"
-                                            mode: "rectangle"
-
-                                        BoxLayout:
-                                            spacing: dp(10)
-                                            size_hint_y: None
-                                            height: dp(116)
-                                            orientation: "horizontal" if self.width > dp(900) else "vertical"
-
-                                            MDRaisedButton:
-                                                text: "Search"
-                                                md_bg_color: 0.15, 0.42, 0.95, 1
-                                                on_release: app.search_gene_action()
-
-                                            MDFlatButton:
-                                                text: "Clear"
-                                                on_release: app.clear_search_action()
-
-                                            MDRaisedButton:
-                                                text: "Save Sequence"
-                                                md_bg_color: 0.09, 0.72, 0.67, 1
-                                                on_release: app.save_sequence_action()
-
-                                            MDRaisedButton:
-                                                text: "Bookmark Gene"
-                                                md_bg_color: 0.14, 0.75, 0.42, 1
-                                                on_release: app.bookmark_gene_action()
-
-                                    BoxLayout:
-                                        spacing: dp(14)
-                                        size_hint_y: None
-                                        height: dp(260)
-
-                                        MDCard:
-                                            orientation: "vertical"
-                                            padding: dp(16)
-                                            spacing: dp(10)
-                                            radius: [20, 20, 20, 20]
-                                            md_bg_color: 0.11, 0.15, 0.24, 0.92
-
-                                            MDLabel:
-                                                id: local_gene_title
-                                                text: "Disease / Gene Information"
-                                                bold: True
-                                                adaptive_height: True
-
-                                            ScrollView:
-                                                do_scroll_x: False
-                                                MDLabel:
-                                                    id: local_gene_body
-                                                    text: "Search to view local disease-gene information."
-                                                    adaptive_height: True
-                                                    text_size: self.width, None
-
-                                        MDCard:
-                                            orientation: "vertical"
-                                            padding: dp(16)
-                                            spacing: dp(10)
-                                            radius: [20, 20, 20, 20]
-                                            md_bg_color: 0.11, 0.15, 0.24, 0.92
-
-                                            MDLabel:
-                                                id: ncbi_gene_title
-                                                text: "NCBI Gene Summary"
-                                                bold: True
-                                                adaptive_height: True
-
-                                            ScrollView:
-                                                do_scroll_x: False
-                                                MDLabel:
-                                                    id: ncbi_gene_body
-                                                    text: "Search to view live NCBI gene summaries."
-                                                    adaptive_height: True
-                                                    text_size: self.width, None
-
-                                    BoxLayout:
-                                        spacing: dp(14)
-                                        orientation: "horizontal" if self.width > dp(1000) else "vertical"
-
-                                        MDCard:
-                                            orientation: "vertical"
-                                            padding: dp(16)
-                                            spacing: dp(10)
-                                            radius: [20, 20, 20, 20]
-                                            md_bg_color: 0.11, 0.15, 0.24, 0.92
-                                            size_hint_x: 0.34 if self.parent and self.parent.width > dp(1000) else 1
-                                            size_hint_y: None
-                                            height: dp(320) if self.parent and self.parent.width > dp(1000) else dp(260)
-
-                                            MDLabel:
-                                                text: "Nucleotide % Pie Chart"
-                                                bold: True
-                                                adaptive_height: True
-
-                                            FitImage:
-                                                id: pie_chart
-                                                source: "assets/nucleotide_pie.png"
-                                                radius: [18, 18, 18, 18]
-
-                                        MDCard:
-                                            orientation: "vertical"
-                                            padding: dp(16)
-                                            spacing: dp(10)
-                                            radius: [20, 20, 20, 20]
-                                            md_bg_color: 0.06, 0.09, 0.15, 1
-                                            size_hint_y: None
-                                            height: dp(320) if self.parent and self.parent.width > dp(1000) else dp(420)
-
-                                            MDLabel:
-                                                text: "Related Diseases"
-                                                bold: True
-                                                adaptive_height: True
-
-                                            ScrollView:
-                                                do_scroll_x: False
-                                                MDBoxLayout:
-                                                    orientation: "vertical"
-                                                    adaptive_height: True
-                                                    spacing: dp(10)
-
-                                                    MDLabel:
-                                                        id: related_diseases
-                                                        text: "-"
-                                                        adaptive_height: True
-                                                        text_size: self.width, None
-
-                                                    MDSeparator:
-
-                                                    MDLabel:
-                                                        text: "Protein Information"
-                                                        bold: True
-                                                        adaptive_height: True
-
-                                                    MDLabel:
-                                                        id: protein_info
-                                                        text: "-"
-                                                        adaptive_height: True
-                                                        text_size: self.width, None
-
-                                                    MDSeparator:
-
-                                                    MDLabel:
-                                                        text: "External Links"
-                                                        bold: True
-                                                        adaptive_height: True
-
-                                                    MDLabel:
-                                                        id: external_links
-                                                        text: "-"
-                                                        adaptive_height: True
-                                                        text_size: self.width, None
-
-                                    MDCard:
-                                        orientation: "vertical"
-                                        padding: dp(16)
-                                        spacing: dp(10)
-                                        radius: [20, 20, 20, 20]
-                                        md_bg_color: 0.06, 0.09, 0.15, 1
-                                        size_hint_y: None
-                                        height: dp(300)
-
-                                        MDLabel:
-                                            id: alignment_title
-                                            text: "Alignment Viewer"
-                                            bold: True
-                                            adaptive_height: True
-
-                                        MDLabel:
-                                            id: alignment_stats
-                                            text: "Identity: - | Score: -"
-                                            theme_text_color: "Hint"
-                                            adaptive_height: True
-
-                                        ScrollView:
-                                            do_scroll_x: True
-                                            do_scroll_y: True
-                                            bar_width: dp(5)
-                                            MDLabel:
-                                                id: alignment_body
-                                                text: "Load a multi-sequence FASTA file with 2 or more sequences to run alignment."
-                                                markup: True
-                                                adaptive_height: True
-                                                width: max(self.texture_size[0], dp(900))
-                                                size_hint_x: None
-                                                text_size: None, None
-
-                                    MDCard:
-                                        orientation: "vertical"
-                                        padding: dp(16)
-                                        spacing: dp(12)
-                                        radius: [20, 20, 20, 20]
-                                        md_bg_color: 0.06, 0.09, 0.15, 1
-                                        size_hint_y: None
-                                        height: dp(560)
-
-                                        MDLabel:
-                                            text: "Disease Symptoms, Precautions, and Treatment"
-                                            bold: True
-                                            adaptive_height: True
-
-                                        MDLabel:
-                                            id: disease_type_label
-                                            text: "Disease Type: Search a disease to load enriched clinical notes"
-                                            theme_text_color: "Hint"
-                                            adaptive_height: True
-
-                                        BoxLayout:
-                                            spacing: dp(12)
-                                            orientation: "horizontal" if self.width > dp(1000) else "vertical"
-                                            
-                                            MDBoxLayout:
-                                                orientation: "vertical"
-                                                spacing: dp(12)
-                                                size_hint_x: 0.72 if self.parent and self.parent.width > dp(1000) else 1
-                                                size_hint_y: None
-                                                height: dp(520) if self.parent and self.parent.width > dp(1000) else dp(420)
+                                                MDTextField:
+                                                    id: search_input
+                                                    hint_text: "Search disease or gene"
+                                                    text: "BRCA1"
+                                                    mode: "rectangle"
 
                                                 BoxLayout:
-                                                    spacing: dp(12)
+                                                    spacing: dp(10)
+                                                    size_hint_y: None
+                                                    height: dp(116)
+                                                    orientation: "horizontal" if self.width > dp(900) else "vertical"
 
-                                                    MDCard:
-                                                        orientation: "vertical"
-                                                        padding: dp(14)
-                                                        spacing: dp(8)
-                                                        radius: [18, 18, 18, 18]
-                                                        md_bg_color: 0.07, 0.10, 0.17, 1
+                                                    MDRaisedButton:
+                                                        text: "Search"
+                                                        md_bg_color: 0.15, 0.42, 0.95, 1
+                                                        on_release: app.search_gene_action()
 
+                                                    MDFlatButton:
+                                                        text: "Clear"
+                                                        on_release: app.clear_search_action()
+
+                                                    MDRaisedButton:
+                                                        text: "Save Sequence"
+                                                        md_bg_color: 0.09, 0.72, 0.67, 1
+                                                        on_release: app.save_sequence_action()
+
+                                                    MDRaisedButton:
+                                                        text: "Bookmark Gene"
+                                                        md_bg_color: 0.14, 0.75, 0.42, 1
+                                                        on_release: app.bookmark_gene_action()
+
+                                            BoxLayout:
+                                                spacing: dp(14)
+                                                size_hint_y: None
+                                                height: dp(260)
+
+                                                MDCard:
+                                                    orientation: "vertical"
+                                                    padding: dp(16)
+                                                    spacing: dp(10)
+                                                    radius: [20, 20, 20, 20]
+                                                    md_bg_color: 0.11, 0.15, 0.24, 0.92
+
+                                                    MDLabel:
+                                                        id: local_gene_title
+                                                        text: "Disease / Gene Information"
+                                                        bold: True
+                                                        adaptive_height: True
+
+                                                    ScrollView:
+                                                        do_scroll_x: False
                                                         MDLabel:
-                                                            text: "Symptoms"
-                                                            bold: True
+                                                            id: local_gene_body
+                                                            text: "Search to view local disease-gene information."
                                                             adaptive_height: True
+                                                            text_size: self.width, None
 
-                                                        ScrollView:
-                                                            do_scroll_x: False
+                                                MDCard:
+                                                    orientation: "vertical"
+                                                    padding: dp(16)
+                                                    spacing: dp(10)
+                                                    radius: [20, 20, 20, 20]
+                                                    md_bg_color: 0.11, 0.15, 0.24, 0.92
+
+                                                    MDLabel:
+                                                        id: ncbi_gene_title
+                                                        text: "NCBI Gene Summary"
+                                                        bold: True
+                                                        adaptive_height: True
+
+                                                    ScrollView:
+                                                        do_scroll_x: False
+                                                        MDLabel:
+                                                            id: ncbi_gene_body
+                                                            text: "Search to view live NCBI gene summaries."
+                                                            adaptive_height: True
+                                                            text_size: self.width, None
+
+                                            BoxLayout:
+                                                spacing: dp(14)
+                                                orientation: "horizontal" if self.width > dp(1000) else "vertical"
+
+                                                MDCard:
+                                                    orientation: "vertical"
+                                                    padding: dp(16)
+                                                    spacing: dp(10)
+                                                    radius: [20, 20, 20, 20]
+                                                    md_bg_color: 0.11, 0.15, 0.24, 0.92
+                                                    size_hint_x: 0.34 if self.parent and self.parent.width > dp(1000) else 1
+                                                    size_hint_y: None
+                                                    height: dp(320) if self.parent and self.parent.width > dp(1000) else dp(260)
+
+                                                    MDLabel:
+                                                        text: "Nucleotide % Pie Chart"
+                                                        bold: True
+                                                        adaptive_height: True
+
+                                                    FitImage:
+                                                        id: pie_chart
+                                                        source: "assets/nucleotide_pie.png"
+                                                        radius: [18, 18, 18, 18]
+
+                                                MDCard:
+                                                    orientation: "vertical"
+                                                    padding: dp(16)
+                                                    spacing: dp(10)
+                                                    radius: [20, 20, 20, 20]
+                                                    md_bg_color: 0.06, 0.09, 0.15, 1
+                                                    size_hint_y: None
+                                                    height: dp(320) if self.parent and self.parent.width > dp(1000) else dp(420)
+
+                                                    MDLabel:
+                                                        text: "Related Diseases"
+                                                        bold: True
+                                                        adaptive_height: True
+
+                                                    ScrollView:
+                                                        do_scroll_x: False
+                                                        MDBoxLayout:
+                                                            orientation: "vertical"
+                                                            adaptive_height: True
+                                                            spacing: dp(10)
+
                                                             MDLabel:
-                                                                id: symptoms_body
-                                                                text: "Search a disease to view detailed symptoms."
+                                                                id: related_diseases
+                                                                text: "-"
                                                                 adaptive_height: True
                                                                 text_size: self.width, None
 
-                                                    MDCard:
-                                                        orientation: "vertical"
-                                                        padding: dp(14)
-                                                        spacing: dp(8)
-                                                        radius: [18, 18, 18, 18]
-                                                        md_bg_color: 0.07, 0.10, 0.17, 1
+                                                            MDSeparator:
 
-                                                        MDLabel:
-                                                            text: "Precautions"
-                                                            bold: True
-                                                            adaptive_height: True
-
-                                                        ScrollView:
-                                                            do_scroll_x: False
                                                             MDLabel:
-                                                                id: precautions_body
-                                                                text: "Search a disease to view precautions."
+                                                                text: "Protein Information"
+                                                                bold: True
+                                                                adaptive_height: True
+
+                                                            MDLabel:
+                                                                id: protein_info
+                                                                text: "-"
                                                                 adaptive_height: True
                                                                 text_size: self.width, None
 
-                                                    MDCard:
-                                                        orientation: "vertical"
-                                                        padding: dp(14)
-                                                        spacing: dp(8)
-                                                        radius: [18, 18, 18, 18]
-                                                        md_bg_color: 0.07, 0.10, 0.17, 1
+                                                            MDSeparator:
 
-                                                        MDLabel:
-                                                            text: "Treatment / Cure"
-                                                            bold: True
-                                                            adaptive_height: True
-
-                                                        ScrollView:
-                                                            do_scroll_x: False
                                                             MDLabel:
-                                                                id: treatment_body
-                                                                text: "Search a disease to view treatment or care details."
+                                                                text: "External Links"
+                                                                bold: True
+                                                                adaptive_height: True
+
+                                                            MDLabel:
+                                                                id: external_links
+                                                                text: "-"
                                                                 adaptive_height: True
                                                                 text_size: self.width, None
 
                                             MDCard:
                                                 orientation: "vertical"
-                                                padding: dp(14)
-                                                spacing: dp(8)
-                                                radius: [18, 18, 18, 18]
-                                                md_bg_color: 0.07, 0.10, 0.17, 1
-                                                size_hint_x: 0.28 if self.parent and self.parent.width > dp(1000) else 1
+                                                padding: dp(16)
+                                                spacing: dp(10)
+                                                radius: [20, 20, 20, 20]
+                                                md_bg_color: 0.06, 0.09, 0.15, 1
                                                 size_hint_y: None
-                                                height: dp(520) if self.parent and self.parent.width > dp(1000) else dp(220)
+                                                height: dp(300)
 
                                                 MDLabel:
-                                                    text: "AI Explanation"
+                                                    id: alignment_title
+                                                    text: "Alignment Viewer"
                                                     bold: True
                                                     adaptive_height: True
 
+                                                MDLabel:
+                                                    id: alignment_stats
+                                                    text: "Identity: - | Score: -"
+                                                    theme_text_color: "Hint"
+                                                    adaptive_height: True
+
                                                 ScrollView:
-                                                    do_scroll_x: False
+                                                    do_scroll_x: True
+                                                    do_scroll_y: True
+                                                    bar_width: dp(5)
                                                     MDLabel:
-                                                        id: ai_explanation_body
-                                                        text: "Search a disease to generate a simple explanation panel."
+                                                        id: alignment_body
+                                                        text: "Load a multi-sequence FASTA file with 2 or more sequences to run alignment."
+                                                        markup: True
                                                         adaptive_height: True
-                                                        text_size: self.width, None
+                                                        width: max(self.texture_size[0], dp(900))
+                                                        size_hint_x: None
+                                                        text_size: None, None
 
-                        MDCard:
-                            radius: [16, 16, 16, 16]
-                            md_bg_color: 0.11, 0.15, 0.24, 0.95
-                            size_hint_y: None
-                            height: dp(40)
-                            padding: dp(12), 0
+                                            MDCard:
+                                                orientation: "vertical"
+                                                padding: dp(16)
+                                                spacing: dp(12)
+                                                radius: [20, 20, 20, 20]
+                                                md_bg_color: 0.06, 0.09, 0.15, 1
+                                                size_hint_y: None
+                                                height: dp(560)
 
-                            MDLabel:
-                                id: status_label
-                                text: "Ready"
-                                theme_text_color: "Custom"
-                                text_color: 0.14, 0.75, 0.42, 1
+                                                MDLabel:
+                                                    text: "Disease Symptoms, Precautions, and Treatment"
+                                                    bold: True
+                                                    adaptive_height: True
+
+                                                MDLabel:
+                                                    id: disease_type_label
+                                                    text: "Disease Type: Search a disease to load enriched clinical notes"
+                                                    theme_text_color: "Hint"
+                                                    adaptive_height: True
+
+                                                BoxLayout:
+                                                    spacing: dp(12)
+                                                    orientation: "horizontal" if self.width > dp(1000) else "vertical"
+                                            
+                                                    MDBoxLayout:
+                                                        orientation: "vertical"
+                                                        spacing: dp(12)
+                                                        size_hint_x: 0.72 if self.parent and self.parent.width > dp(1000) else 1
+                                                        size_hint_y: None
+                                                        height: dp(520) if self.parent and self.parent.width > dp(1000) else dp(420)
+
+                                                        BoxLayout:
+                                                            spacing: dp(12)
+
+                                                            MDCard:
+                                                                orientation: "vertical"
+                                                                padding: dp(14)
+                                                                spacing: dp(8)
+                                                                radius: [18, 18, 18, 18]
+                                                                md_bg_color: 0.07, 0.10, 0.17, 1
+
+                                                                MDLabel:
+                                                                    text: "Symptoms"
+                                                                    bold: True
+                                                                    adaptive_height: True
+
+                                                                ScrollView:
+                                                                    do_scroll_x: False
+                                                                    MDLabel:
+                                                                        id: symptoms_body
+                                                                        text: "Search a disease to view detailed symptoms."
+                                                                        adaptive_height: True
+                                                                        text_size: self.width, None
+
+                                                            MDCard:
+                                                                orientation: "vertical"
+                                                                padding: dp(14)
+                                                                spacing: dp(8)
+                                                                radius: [18, 18, 18, 18]
+                                                                md_bg_color: 0.07, 0.10, 0.17, 1
+
+                                                                MDLabel:
+                                                                    text: "Precautions"
+                                                                    bold: True
+                                                                    adaptive_height: True
+
+                                                                ScrollView:
+                                                                    do_scroll_x: False
+                                                                    MDLabel:
+                                                                        id: precautions_body
+                                                                        text: "Search a disease to view precautions."
+                                                                        adaptive_height: True
+                                                                        text_size: self.width, None
+
+                                                            MDCard:
+                                                                orientation: "vertical"
+                                                                padding: dp(14)
+                                                                spacing: dp(8)
+                                                                radius: [18, 18, 18, 18]
+                                                                md_bg_color: 0.07, 0.10, 0.17, 1
+
+                                                                MDLabel:
+                                                                    text: "Treatment / Cure"
+                                                                    bold: True
+                                                                    adaptive_height: True
+
+                                                                ScrollView:
+                                                                    do_scroll_x: False
+                                                                    MDLabel:
+                                                                        id: treatment_body
+                                                                        text: "Search a disease to view treatment or care details."
+                                                                        adaptive_height: True
+                                                                        text_size: self.width, None
+
+                                                    MDCard:
+                                                        orientation: "vertical"
+                                                        padding: dp(14)
+                                                        spacing: dp(8)
+                                                        radius: [18, 18, 18, 18]
+                                                        md_bg_color: 0.07, 0.10, 0.17, 1
+                                                        size_hint_x: 0.28 if self.parent and self.parent.width > dp(1000) else 1
+                                                        size_hint_y: None
+                                                        height: dp(520) if self.parent and self.parent.width > dp(1000) else dp(220)
+
+                                                        MDLabel:
+                                                            text: "AI Explanation"
+                                                            bold: True
+                                                            adaptive_height: True
+
+                                                        ScrollView:
+                                                            do_scroll_x: False
+                                                            MDLabel:
+                                                                id: ai_explanation_body
+                                                                text: "Search a disease to generate a simple explanation panel."
+                                                                adaptive_height: True
+                                                                text_size: self.width, None
+
+                                MDCard:
+                                    radius: [16, 16, 16, 16]
+                                    md_bg_color: 0.11, 0.15, 0.24, 0.95
+                                    size_hint_y: None
+                                    height: dp(40)
+                                    padding: dp(12), 0
+
+                                    MDLabel:
+                                        id: status_label
+                                        text: "Ready"
+                                        theme_text_color: "Custom"
+                                        text_color: 0.14, 0.75, 0.42, 1
 
                     MDBottomNavigationItem:
                         name: "ai"
                         text: "AI"
                         icon: "robot"
 
-                BoxLayout:
-                    orientation: "vertical"
-                    padding: dp(18)
-                    spacing: dp(14)
-
-                    MDCard:
-                        orientation: "vertical"
-                        padding: dp(24)
-                        spacing: dp(14)
-                        radius: [30, 30, 30, 30]
-                        md_bg_color: 0.11, 0.15, 0.24, 0.92
-
-                        MDLabel:
-                            text: "AI Medical Assistant"
-                            font_style: "H4"
-                            bold: True
-                            adaptive_height: True
-                            text_color: 1, 1, 1, 1
-
-                        MDLabel:
-                            text: "Ask about genes, diseases, pathways, and treatments in a future chat-style experience."
-                            adaptive_height: True
-                            text_color: 0.84, 0.90, 0.98, 1
-
-                        MDCard:
-                            radius: [20, 20, 20, 20]
-                            md_bg_color: 0.13, 0.18, 0.28, 1
-                            padding: dp(16)
+                        BoxLayout:
                             orientation: "vertical"
-                            MDLabel:
-                                text: "Coming next: markdown answers, copy button, share button, and typing animation."
-                                adaptive_height: True
-                                text_color: 0.95, 0.97, 1, 1
+                            padding: dp(18)
+                            spacing: dp(14)
+
+                            MDCard:
+                                orientation: "vertical"
+                                padding: dp(24)
+                                spacing: dp(14)
+                                radius: [30, 30, 30, 30]
+                                md_bg_color: 0.11, 0.15, 0.24, 0.92
+
+                                MDLabel:
+                                    text: "AI Medical Assistant"
+                                    font_style: "H4"
+                                    bold: True
+                                    adaptive_height: True
+                                    text_color: 1, 1, 1, 1
+
+                                MDLabel:
+                                    text: "Ask about genes, diseases, pathways, and treatments in a future chat-style experience."
+                                    adaptive_height: True
+                                    text_color: 0.84, 0.90, 0.98, 1
+
+                                MDCard:
+                                    radius: [20, 20, 20, 20]
+                                    md_bg_color: 0.13, 0.18, 0.28, 1
+                                    padding: dp(16)
+                                    orientation: "vertical"
+                                    MDLabel:
+                                        text: "Coming next: markdown answers, copy button, share button, and typing animation."
+                                        adaptive_height: True
+                                        text_color: 0.95, 0.97, 1, 1
 
                     MDBottomNavigationItem:
                         name: "library"
                         text: "Library"
                         icon: "library"
 
-                BoxLayout:
-                    orientation: "vertical"
-                    padding: dp(18)
-                    spacing: dp(14)
+                        BoxLayout:
+                            orientation: "vertical"
+                            padding: dp(18)
+                            spacing: dp(14)
 
-                    MDCard:
-                        orientation: "vertical"
-                        padding: dp(24)
-                        spacing: dp(14)
-                        radius: [30, 30, 30, 30]
-                        md_bg_color: 0.11, 0.15, 0.24, 0.92
+                            MDCard:
+                                orientation: "vertical"
+                                padding: dp(24)
+                                spacing: dp(14)
+                                radius: [30, 30, 30, 30]
+                                md_bg_color: 0.11, 0.15, 0.24, 0.92
 
-                        MDLabel:
-                            text: "Research Library"
-                            font_style: "H4"
-                            bold: True
-                            adaptive_height: True
-                            text_color: 1, 1, 1, 1
+                                MDLabel:
+                                    text: "Research Library"
+                                    font_style: "H4"
+                                    bold: True
+                                    adaptive_height: True
+                                    text_color: 1, 1, 1, 1
 
-                        MDLabel:
-                            text: "Saved sequences, bookmarked genes, history, and literature will live here."
-                            adaptive_height: True
-                            text_color: 0.84, 0.90, 0.98, 1
+                                MDLabel:
+                                    text: "Saved sequences, bookmarked genes, history, and literature will live here."
+                                    adaptive_height: True
+                                    text_color: 0.84, 0.90, 0.98, 1
 
-                        MDRaisedButton:
-                            text: "Open History"
-                            md_bg_color: 0.15, 0.42, 0.95, 1
-                            on_release: app.show_history_action()
+                                MDRaisedButton:
+                                    text: "Open History"
+                                    md_bg_color: 0.15, 0.42, 0.95, 1
+                                    on_release: app.show_history_action()
 
-                        MDRaisedButton:
-                            text: "Open Bookmarks"
-                            md_bg_color: 0.09, 0.72, 0.67, 1
-                            on_release: app.show_bookmarks_action()
+                                MDRaisedButton:
+                                    text: "Open Bookmarks"
+                                    md_bg_color: 0.09, 0.72, 0.67, 1
+                                    on_release: app.show_bookmarks_action()
 
                     MDBottomNavigationItem:
                         name: "settings"
                         text: "Settings"
                         icon: "cog"
 
-                    BoxLayout:
-                        orientation: "vertical"
-                        padding: dp(18)
-                        spacing: dp(14)
-
-                        MDCard:
+                        BoxLayout:
                             orientation: "vertical"
-                            padding: dp(24)
+                            padding: dp(18)
                             spacing: dp(14)
-                            radius: [30, 30, 30, 30]
-                            md_bg_color: 0.11, 0.15, 0.24, 0.92
 
-                            MDLabel:
-                                text: "Settings"
-                                font_style: "H4"
-                                bold: True
-                                adaptive_height: True
-                                text_color: 1, 1, 1, 1
+                            MDCard:
+                                orientation: "vertical"
+                                padding: dp(24)
+                                spacing: dp(14)
+                                radius: [30, 30, 30, 30]
+                                md_bg_color: 0.11, 0.15, 0.24, 0.92
 
-                            MDLabel:
-                                text: "Adjust the interface style and keep the app in a premium dark or light mode."
-                                adaptive_height: True
-                                text_color: 0.84, 0.90, 0.98, 1
+                                MDLabel:
+                                    text: "Settings"
+                                    font_style: "H4"
+                                    bold: True
+                                    adaptive_height: True
+                                    text_color: 1, 1, 1, 1
 
-                            MDRaisedButton:
-                                text: "Toggle Light / Dark"
-                                md_bg_color: 0.35, 0.45, 0.90, 1
-                                on_release: app.toggle_theme()
+                                MDLabel:
+                                    text: "Adjust the interface style and keep the app in a premium dark or light mode."
+                                    adaptive_height: True
+                                    text_color: 0.84, 0.90, 0.98, 1
+
+                                MDRaisedButton:
+                                    text: "Toggle Light / Dark"
+                                    md_bg_color: 0.35, 0.45, 0.90, 1
+                                    on_release: app.toggle_theme()
 
         MDNavigationDrawer:
             id: nav_drawer
