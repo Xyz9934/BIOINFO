@@ -32,13 +32,13 @@ MDScreen:
                                 height: self.minimum_height
 
                                 MDCard:
-                                    orientation: "horizontal"
+                                    orientation: "horizontal" if self.width > dp(1100) else "vertical"
                                     padding: dp(16)
                                     spacing: dp(16)
                                     radius: [22, 22, 22, 22]
                                     md_bg_color: 0.04, 0.06, 0.11, 1
                                     size_hint_y: None
-                                    height: dp(430)
+                                    height: dp(610)
 
                                     MDCard:
                                         orientation: "vertical"
@@ -62,23 +62,35 @@ MDScreen:
                                             size_hint_y: None
                                             height: dp(150)
 
-                                        MDRaisedButton:
-                                            text: "Analyze Sequence"
-                                            md_bg_color: 0.45, 0.25, 0.92, 1
-                                            pos_hint: {"center_x": .5}
-                                            on_release: app.analyze_sequence_action()
+                                        BoxLayout:
+                                            orientation: "vertical"
+                                            spacing: dp(10)
+                                            size_hint_y: None
+                                            height: dp(162)
 
-                                        MDRaisedButton:
-                                            text: "Upload FASTA File"
-                                            md_bg_color: 0.20, 0.55, 0.92, 1
-                                            pos_hint: {"center_x": .5}
-                                            on_release: app.upload_fasta_action()
+                                            MDRaisedButton:
+                                                text: "Analyze Sequence"
+                                                md_bg_color: 0.45, 0.25, 0.92, 1
+                                                size_hint_x: None
+                                                width: dp(220)
+                                                pos_hint: {"center_x": .5}
+                                                on_release: app.analyze_sequence_action()
 
-                                        MDRaisedButton:
-                                            text: "Run Alignment"
-                                            md_bg_color: 0.18, 0.68, 0.40, 1
-                                            pos_hint: {"center_x": .5}
-                                            on_release: app.run_alignment_action()
+                                            MDRaisedButton:
+                                                text: "Upload FASTA File"
+                                                md_bg_color: 0.20, 0.55, 0.92, 1
+                                                size_hint_x: None
+                                                width: dp(220)
+                                                pos_hint: {"center_x": .5}
+                                                on_release: app.upload_fasta_action()
+
+                                            MDRaisedButton:
+                                                text: "Run Alignment"
+                                                md_bg_color: 0.18, 0.68, 0.40, 1
+                                                size_hint_x: None
+                                                width: dp(220)
+                                                pos_hint: {"center_x": .5}
+                                                on_release: app.run_alignment_action()
 
                                         MDCard:
                                             orientation: "vertical"
@@ -108,18 +120,21 @@ MDScreen:
                                             theme_text_color: "Hint"
                                             adaptive_height: True
 
-                                    MDCard:
-                                        orientation: "vertical"
-                                        padding: dp(16)
-                                        spacing: dp(14)
-                                        radius: [20, 20, 20, 20]
-                                        md_bg_color: 0.06, 0.09, 0.15, 1
+                                        MDCard:
+                                            orientation: "vertical"
+                                            padding: dp(16)
+                                            spacing: dp(14)
+                                            radius: [20, 20, 20, 20]
+                                            md_bg_color: 0.06, 0.09, 0.15, 1
+                                            size_hint_x: 0.42 if self.parent and self.parent.width > dp(1100) else 1
+                                            size_hint_y: None
+                                            height: dp(610) if self.parent and self.parent.width > dp(1100) else dp(360)
 
-                                        MDLabel:
-                                            text: "Analysis Results"
-                                            bold: True
-                                            font_style: "H6"
-                                            adaptive_height: True
+                                            MDLabel:
+                                                text: "Analysis Results"
+                                                bold: True
+                                                font_style: "H6"
+                                                adaptive_height: True
 
                                         GridLayout:
                                             cols: 3
@@ -146,10 +161,10 @@ MDScreen:
                                                 value_color: 0.63, 0.44, 1, 1
 
                                         GridLayout:
-                                            cols: 4
+                                            cols: 4 if self.width > dp(700) else 2
                                             spacing: dp(10)
                                             size_hint_y: None
-                                            height: dp(118)
+                                            height: dp(236) if self.cols == 2 else dp(118)
 
                                             MetricCard:
                                                 id: a_card
@@ -194,7 +209,7 @@ MDScreen:
                                     radius: [22, 22, 22, 22]
                                     md_bg_color: 0.04, 0.06, 0.11, 1
                                     size_hint_y: None
-                                    height: dp(980)
+                                    height: dp(1040)
 
                                     MDLabel:
                                         text: "Disease / Gene Search"
@@ -203,9 +218,10 @@ MDScreen:
                                         adaptive_height: True
 
                                     BoxLayout:
-                                        size_hint_y: None
-                                        height: dp(52)
+                                        orientation: "vertical"
                                         spacing: dp(10)
+                                        size_hint_y: None
+                                        height: dp(220)
 
                                         MDTextField:
                                             id: search_input
@@ -213,24 +229,30 @@ MDScreen:
                                             text: "BRCA1"
                                             mode: "rectangle"
 
-                                        MDRaisedButton:
-                                            text: "Search"
-                                            md_bg_color: 0.45, 0.25, 0.92, 1
-                                            on_release: app.search_gene_action()
+                                        BoxLayout:
+                                            spacing: dp(10)
+                                            size_hint_y: None
+                                            height: dp(116)
+                                            orientation: "horizontal" if self.width > dp(900) else "vertical"
 
-                                        MDFlatButton:
-                                            text: "Clear"
-                                            on_release: app.clear_search_action()
+                                            MDRaisedButton:
+                                                text: "Search"
+                                                md_bg_color: 0.45, 0.25, 0.92, 1
+                                                on_release: app.search_gene_action()
 
-                                        MDRaisedButton:
-                                            text: "Save Sequence"
-                                            md_bg_color: 0.20, 0.55, 0.92, 1
-                                            on_release: app.save_sequence_action()
+                                            MDFlatButton:
+                                                text: "Clear"
+                                                on_release: app.clear_search_action()
 
-                                        MDRaisedButton:
-                                            text: "Bookmark Gene"
-                                            md_bg_color: 0.18, 0.68, 0.40, 1
-                                            on_release: app.bookmark_gene_action()
+                                            MDRaisedButton:
+                                                text: "Save Sequence"
+                                                md_bg_color: 0.20, 0.55, 0.92, 1
+                                                on_release: app.save_sequence_action()
+
+                                            MDRaisedButton:
+                                                text: "Bookmark Gene"
+                                                md_bg_color: 0.18, 0.68, 0.40, 1
+                                                on_release: app.bookmark_gene_action()
 
                                     BoxLayout:
                                         spacing: dp(14)
@@ -281,6 +303,7 @@ MDScreen:
 
                                     BoxLayout:
                                         spacing: dp(14)
+                                        orientation: "horizontal" if self.width > dp(1000) else "vertical"
 
                                         MDCard:
                                             orientation: "vertical"
@@ -288,7 +311,9 @@ MDScreen:
                                             spacing: dp(10)
                                             radius: [20, 20, 20, 20]
                                             md_bg_color: 0.06, 0.09, 0.15, 1
-                                            size_hint_x: 0.34
+                                            size_hint_x: 0.34 if self.parent and self.parent.width > dp(1000) else 1
+                                            size_hint_y: None
+                                            height: dp(320) if self.parent and self.parent.width > dp(1000) else dp(260)
 
                                             MDLabel:
                                                 text: "Nucleotide % Pie Chart"
@@ -306,6 +331,8 @@ MDScreen:
                                             spacing: dp(10)
                                             radius: [20, 20, 20, 20]
                                             md_bg_color: 0.06, 0.09, 0.15, 1
+                                            size_hint_y: None
+                                            height: dp(320) if self.parent and self.parent.width > dp(1000) else dp(420)
 
                                             MDLabel:
                                                 text: "Related Diseases"
@@ -358,7 +385,7 @@ MDScreen:
                                         radius: [20, 20, 20, 20]
                                         md_bg_color: 0.06, 0.09, 0.15, 1
                                         size_hint_y: None
-                                        height: dp(260)
+                                        height: dp(300)
 
                                         MDLabel:
                                             id: alignment_title
@@ -392,7 +419,7 @@ MDScreen:
                                         radius: [20, 20, 20, 20]
                                         md_bg_color: 0.06, 0.09, 0.15, 1
                                         size_hint_y: None
-                                        height: dp(520)
+                                        height: dp(560)
 
                                         MDLabel:
                                             text: "Disease Symptoms, Precautions, and Treatment"
@@ -407,11 +434,14 @@ MDScreen:
 
                                         BoxLayout:
                                             spacing: dp(12)
+                                            orientation: "horizontal" if self.width > dp(1000) else "vertical"
                                             
                                             MDBoxLayout:
                                                 orientation: "vertical"
                                                 spacing: dp(12)
-                                                size_hint_x: 0.72
+                                                size_hint_x: 0.72 if self.parent and self.parent.width > dp(1000) else 1
+                                                size_hint_y: None
+                                                height: dp(520) if self.parent and self.parent.width > dp(1000) else dp(420)
 
                                                 BoxLayout:
                                                     spacing: dp(12)
@@ -482,7 +512,9 @@ MDScreen:
                                                 spacing: dp(8)
                                                 radius: [18, 18, 18, 18]
                                                 md_bg_color: 0.07, 0.10, 0.17, 1
-                                                size_hint_x: 0.28
+                                                size_hint_x: 0.28 if self.parent and self.parent.width > dp(1000) else 1
+                                                size_hint_y: None
+                                                height: dp(520) if self.parent and self.parent.width > dp(1000) else dp(220)
 
                                                 MDLabel:
                                                     text: "AI Explanation"

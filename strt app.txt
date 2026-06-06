@@ -1,0 +1,16 @@
+Create a new venv with Python 3.12:
+py -3.12 -m venv venv
+Activate it:
+venv\Scripts\activate
+Upgrade pip:
+python -m pip install --upgrade pip
+Install requirements:
+pip install kivy
+Before doing anything else
+
+Send me the output of:
+
+python --version
+py -0p
+
+and I'll tell you exactly which Python versions are installed on your PC and the quickest way to get BIOINFO running.
